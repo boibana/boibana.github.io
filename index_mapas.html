@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+<meta charset="utf-8">
+<title>Casas de aluguel Boibana</title>
+<link href="estilo_mapasa.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="deps_pergs"><p>Sugerimos visitar a página <a href="index_exp_passeios_eventos.html">Passeios e Eventos</a> e a página <a href="index_forum_dicas_noticias.html">Dicas e Notícias</a> para mais informações sobre as nossas recomendações.</p></div>
+
+<div id="loader"></div>
+
+<!-- COMEÇO ID HOVER COMEÇO ID HOVER -->
+
+<div id=hover>
+
+<div id=conteiner>
+<div id=fundo>
+
+<!-- COMEÇO MAPA SP - BOI -->
+<div id="msp_thumb" onclick="on_msp()"><p>São Paulo para Boiçucanga</p><div id="shape_msp"></div></div>
+<div id="msp_t"><p>Neste mapa vocês podem conferir os dois principais<br />caminhos entre São Paulo e a Praia de Boiçucanga.</p></div>
+
+<div id="overlay_msp" onclick="off_msp()"><div id="msp_large"></div><div class='pin_msp'><div id="pin1_msp"></div></div><div class='pulse_msp'><div id="pulse1_msp"</div></div></div></div>
+
+<!--on... off... , document.getElementById("baixar_msp").style.display = "none"-->
+<script>
+function on_msp() {
+    document.getElementById("overlay_msp").style.display = "block", document.documentElement.scrollTop = 220, document.getElementById("baixar_msp").style.display = "block";
+}
+
+function off_msp() {
+    document.getElementById("overlay_msp").style.display = "none", document.getElementById("baixar_msp").style.display = "none";
+}
+</script>
+<!-- FIM MAPA SP - BOI -->
+
+<!-- COMEÇO MAPA BOIÇU - BOI -->
+<div id="mboi_thumb" onclick="on_mboi()"><p>Boiçucanga para Boibana</p><div id="shape_mboi"></div></div>
+<div id="mboi_t"><p>Neste mapa vocês podem conferir o principal caminho<br />para chegar nos Chalés Boibana em Boiçucanga.</p></div>
+
+<div id="overlay_mboi" onclick="off_mboi()"><div id="mboi_large"></div><div class='pin_mboi'><div id="pin1_mboi"></div></div><div class='pulse_mboi'><div id="pulse1_mboi"</div></div></div></div>
+
+<script>
+function on_mboi() {
+    document.getElementById("overlay_mboi").style.display = "block", document.documentElement.scrollTop = 220, document.getElementById("baixar_mboi").style.display = "block";
+}
+
+function off_mboi() {
+    document.getElementById("overlay_mboi").style.display = "none", document.getElementById("baixar_mboi").style.display = "none";
+}
+</script>
+<!-- FIM MAPA BOIÇU - BOI -->
+
+<!-- COMEÇO MAPA DAS PRAIAS -->
+<div id="mpra_thumb" onclick="on_mpra()"><p>Praias ao redor de Boiçucanga</p><div id="shape_mpra"></div></div>
+<div id="mpra_t"><p>Neste mapa vocês podem conferir as principais<br />praias ao redor dos Chalés Boibana.</p></div>
+
+<div id="overlay_mpra" onclick="off_mpra()"><div id="mpra_large"></div><div class='pin_mpra'><div id="pin1_mpra"></div></div><div class='pulse_mpra'><div id="pulse1_mpra"</div></div></div></div>
+
+<script>
+function on_mpra() {
+    document.getElementById("overlay_mpra").style.display = "block", document.getElementById("baixar_mpra").style.display = "block";
+}
+
+function off_mpra() {
+    document.getElementById("overlay_mpra").style.display = "none", document.getElementById("baixar_mpra").style.display = "none";
+}
+</script>
+<!-- FIM MAPA DAS PRAIAS -->
+
+<!-- COMEÇO MAPA DAS RECOMENDACOES GERAIS -->
+<div id="mrecg_thumb" onclick="on_mrecg()"><p>Recomendações ao redor de Boiçucanga</p><div id="shape_mrecg"></div></div>
+<div id="mrecg_t"><p>Neste mapa vocês podem conferir nossas principais<br />recomendações de serviços na região.</p></div>
+
+<div id="overlay_mrecg" onclick="off_mrecg()"><div id="mrecg_large"></div><div class='pin_mrecg'><div id="pin1_mrecg"></div></div><div class='pulse_mrecg'><div id="pulse1_mrecg"</div></div></div>
+
+</div>
+
+<script>
+function on_mrecg() {
+    document.getElementById("overlay_mrecg").style.display = "block", document.getElementById("baixar_mrecg").style.display = "block", document.getElementById("regras_colap").style.display = "inherit";
+}
+
+function off_mrecg() {
+    document.getElementById("overlay_mrecg").style.display = "none", document.getElementById("baixar_mrecg").style.display = "none", document.getElementById("regras_colap").style.display = "none";;
+}
+</script>
+
+<!-- COMEÇO MRECG FUNCTION -->
+
+<div id="regras_colap">
+<button class="accordion">Contatos das recomendações</button>
+<div class="panel">
+  <p>-Banana's Beach Club - boate com shows (12) 3863 - 1644<br>
+-Passeio de barco para as ilhas - falar com Tide (12) 99611-2529<br>
+-Passeio de barco para a ilha dos gatos e praia brava - falar com André (12) 99705-6636</br>
+-Escolas de Surf - falar com Heitor (12) 99512-9012 ou Rodrigo (12) 99759-0968<br>
+-Banana Boat - passeio aquático - falar com Junior (11) 99911-37641<br>
+  
+-Mirante Bar Baleia - vista, petiscos e bebidas - (12) 3863-6250<br>
+  
+-Mirante de Boiçucanga - passeios de paraglider - falar com Maresias Tur (12) 99650 - 9051</br>
+-Sirena Maresias - balada com shows (11) 3071 - 2445</br>
+-Parador Maresias - balada com shows (11) 2769 - 1112</br>
+</p>
+
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- FIM MRECG FUNCTION -->
+
+<!-- FIM MAPA DAS RECOMENDACOES GERAIS -->
+
+<!-- COMEÇO MAPA DAS RECOMENDACOES ESPECIFICAS -->
+<div id="mrece_thumb" onclick="on_mrece()"><p>Recomendações em Boiçucanga</p><div id="shape_mrece"></div></div>
+<div id="mrece_t"><p>Neste mapa vocês podem conferir as nossas principais<br />recomendações de serviços em Boiçucanga.</p></div>
+
+<div id="overlay_mrece" onclick="off_mrece()"><div id="mrece_large"></div><div class='pin_mrece'><div id="pin1_mrece"></div></div><div class='pulse_mrece'><div id="pulse1_mrece"</div></div></div></div>
+
+<script>
+function on_mrece() {
+    document.getElementById("overlay_mrece").style.display = "block", document.getElementById("baixar_mrece").style.display = "block";
+}
+
+function off_mrece() {
+    document.getElementById("overlay_mrece").style.display = "none", document.getElementById("baixar_mrece").style.display = "none";
+	
+}
+</script>
+<!-- FIM MAPA DAS RECOMENDACOES ESPECIFICAS -->
+
+<div id="gomap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.3059877707977!2d-45.6133956!3d-23.7749202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!5e0!3m2!1spt-BR!2sbr!4v1538500894932" width="784" height="441" frameborder="0" style="border:0" allowfullscreen id="gmap"></iframe></div>
+
+<div id="gomap_t"><p>Aqui vocês podem interagir com o Googlemaps,<br/> mas ele não reconhece a Rua Flamboyant.</p></div>
+
+<div id="gomap1420"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5630.671662571286!2d-45.616343620528184!3d-23.776897267150837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!5e0!3m2!1spt-BR!2sbr!4v1538511015579" width="586" height="330" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="gomap768"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d912.8026103401568!2d-45.61352780577895!3d-23.775519453242453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!3m2!1d-23.775103899999998!2d-45.613171699999995!5e0!3m2!1spt-BR!2sbr!4v1540599476939" width="1014" height="570" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="gomap360"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5630.671662571286!2d-45.616343620528184!3d-23.776897267150837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!5e0!3m2!1spt-BR!2sbr!4v1538511015579" width="586" height="330" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+</div>
+</div>
+
+<!-- FIM DOS BOTOES-->
+
+
+<!-- pro topo início -->
+<div onclick="topFunction()" id="pro_topo"><img src="img/pro_topo1_e1.png" alt="pro_topo" width="74" height="76" id="pro_topo2" /><img src="img/marca_1900.jpg" alt="marca" width="139" height="116" id="marca" /></div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("pro_topo").style.opacity = "0.8", ("menu_horiz_configfix").style.opacity = "0.0";
+    } else {
+        document.getElementById("pro_topo").style.opacity = "0", ("menu_horiz_configfix").style.opacity = "0.8";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- pro topo fim -->
+
+<!-- teste do menu em faixas horizontais-->
+<div id="menu_horiz_config" class="bounce_bottom">
+ <div class="navbar" id="navbarscroll">
+  <a href="index_boibana.html">Boibana</a>
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_galerias.html" class="current">Galerias</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_videos.html">Vídeos</a>
+      <a href="index_casas.html">Casas</a>
+      <a href="index_mapas.html">Mapas</a>
+      	<div class="subnav2">
+    	<button class="subnavbtn2"><a href="index_praias.html">Praias</a><i class="fa fa-caret-down"></i></button>
+    	 <div class="subnav2-content">
+      	  <a href="index_gal_praias_boi.html">Boiçucanga</a>
+          <a href="index_gal_praias_camburiz.html">Camburizinho</a>
+          <a href="index_gal_praias_camburi.html">Camburi</a>
+          <a href="index_gal_praias_baleia.html">Baleia</a>
+          <a href="index_gal_praias_barra_sahy.html">Barra do Sahy</a>
+          <a href="index_gal_praias_preta.html">Preta</a>
+          <a href="index_gal_praias_Maresias.html">Maresias</a>
+          <a href="index_gal_praias_pauba.html">Paúba</a>
+          <a href="index_gal_praias_santiago.html">Santiago</a>
+          <a href="index_gal_praias_ttgrande.html">Toque-Toque Grande</a>
+          <a href="index_gal_praias_calhetas.html">Calhetas</a>
+          <a href="index_gal_praias_ttpequeno.html">Toque-Toque Pequeno</a>
+    	 </div>
+ 		</div>
+    </div>
+  </div> 
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_experiencias.html">Experiências</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_exp_mirant_aerea.html">Mirantes e Aéreas</a>
+      <a href="index_exp_montanhas_cachoeiras.html">Montanhas e Cachoeiras</a>
+      <a href="index_exp_passeios_eventos.html">Passeios e Eventos</a>
+      <a href="index_exp_diversos.html">Diversos</a>
+    </div>
+  </div>
+  
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_qsomos.html">Quem Somos</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_qsomos_regimento.html" class="flo_r">Regimento Interno</a>
+    </div>
+  </div>
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_forum.html">Fórum</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_forum_perguntas.html" class="flo_r">Perguntas Frequentes</a>
+      <a href="index_forum_depoimentos.html" class="flo_r">Depoimentos</a>
+      <a href="index_forum_dicas_noticias.html" class="flo_r">Dicas e Notícias</a>
+    </div>
+  </div>
+  <a href="index_contatos.html">Contatos</a> 
+  	
+ </div>
+</div>
+
+<div id=bgmenu></div>
+
+<!-- fim do teste menu faixas horizontais-->
+
+<!-- teste do menu em faixas horizontais FIXED-->
+<div id="menu_horiz_configfix" class="bounce_bottom">
+ <div class="navbar" id="navbarscroll">
+  <a href="index_boibana.html">Boibana</a>
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_galerias.html" class="current">Galerias</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_videos.html">Vídeos</a>
+      <a href="index_casas.html">Casas</a>
+      <a href="index_mapas.html">Mapas</a>
+      	<div class="subnav2">
+    	<button class="subnavbtn2"><a href="index_praias.html">Praias</a><i class="fa fa-caret-down"></i></button>
+    	 <div class="subnav2-content">
+      	  <a href="index_gal_praias_boi.html">Boiçucanga</a>
+          <a href="index_gal_praias_camburiz.html">Camburizinho</a>
+          <a href="index_gal_praias_camburi.html">Camburi</a>
+          <a href="index_gal_praias_baleia.html">Baleia</a>
+          <a href="index_gal_praias_barra_sahy.html">Barra do Sahy</a>
+          <a href="index_gal_praias_preta.html">Preta</a>
+          <a href="index_gal_praias_Maresias.html">Maresias</a>
+          <a href="index_gal_praias_pauba.html">Paúba</a>
+          <a href="index_gal_praias_santiago.html">Santiago</a>
+          <a href="index_gal_praias_ttgrande.html">Toque-Toque Grande</a>
+          <a href="index_gal_praias_calhetas.html">Calhetas</a>
+          <a href="index_gal_praias_ttpequeno.html">Toque-Toque Pequeno</a>
+    	 </div>
+ 		</div>
+    </div>
+  </div> 
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_experiencias.html">Experiências</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_exp_mirant_aerea.html">Mirantes e Aéreas</a>
+      <a href="index_exp_montanhas_cachoeiras.html">Montanhas e Cachoeiras</a>
+      <a href="index_exp_passeios_eventos.html">Passeios e Eventos</a>
+      <a href="index_exp_diversos.html">Diversos</a>
+    </div>
+  </div>
+  
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_qsomos.html">Quem Somos</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_qsomos_regimento.html" class="flo_r">Regimento Interno</a>
+    </div>
+  </div>
+  <div class="subnav1">
+    <button class="subnavbtn1"><a href="index_forum.html">Fórum</a><i class="fa fa-caret-down"></i></button>
+    <div class="subnav1-content">
+      <a href="index_forum_perguntas.html" class="flo_r">Perguntas Frequentes</a>
+      <a href="index_forum_depoimentos.html" class="flo_r">Depoimentos</a>
+      <a href="index_forum_dicas_noticias.html" class="flo_r">Dicas e Notícias</a>
+    </div>
+  </div> 
+  <a href="index_contatos.html">Contatos</a>
+  	
+ </div>
+</div>
+
+<div id=bgmenuf></div>
+
+<!-- fim do teste menu faixas horizontais FIXED-->
+
+</div>
+
+<!-- FIM ID HOVER FIM ID HOVER -->
+
+<!-- COMEÇO ID sHOVER COMEÇO ID sHOVER -->
+
+<div id=shover>
+<div id="loaderfix"></div>
+
+<div id=conteiner>
+<div id=fundo>
+
+<!-- COMEÇO MAPA SP - BOI -->
+<a href="img/mapa_sp_boi.jpg" download="mapa_sp_boicucanga"><div id="msp_thumb2"></div></a>
+<div id="msp_t2"><p>Neste mapa vocês podem conferir os dois principais caminhos entre São Paulo e a Praia de Boiçucanga.</p></div>
+
+<div id="overlay_msp2"><div id="msp_large2"></div><div class='pin_msp2'><div id="pin1_msp2"></div></div><div class='pulse_msp2'><div id="pulse1_msp2"</div></div></div></div>
+
+<!--on... off... , document.getElementById("baixar_msp").style.display = "none"-->
+<!-- FIM MAPA SP - BOI -->
+
+<!-- COMEÇO MAPA BOIÇU - BOI -->
+<a href="img/mapa_boi_boibana.jpg" download="mapa_boicucanga_boibana"><div id="mboi_thumb2"></div></a>
+<div id="mboi_t2"><p>Neste mapa vocês podem conferir o principal caminho para chegar nos Chalés Boibana em Boiçucanga.</p></div>
+
+<div id="overlay_mboi2"><div id="mboi_large2"></div><div class='pin_mboi2'><div id="pin1_mboi2"></div></div><div class='pulse_mboi2'><div id="pulse1_mboi2"</div></div></div></div>
+<!-- FIM MAPA BOIÇU - BOI -->
+
+<!-- COMEÇO MAPA DAS PRAIAS -->
+<a href="img/mapa_praias.jpg" download="mapa_praias"><div id="mpra_thumb2"></div></a>
+<div id="mpra_t2"><p>Neste mapa vocês podem conferir as principais praias ao redor dos Chalés Boibana.</p></div>
+
+<div id="overlay_mpra2"><div id="mpra_large2"></div><div class='pin_mpra2'><div id="pin1_mpra2"></div></div><div class='pulse_mpra2'><div id="pulse1_mpra2"</div></div></div></div>
+<!-- FIM MAPA DAS PRAIAS -->
+
+<!-- COMEÇO MAPA DAS RECOMENDACOES GERAIS -->
+<a href="img/mapa_recomends.jpg" download="mapa_recomendacoes_gerais"><div id="mrecg_thumb2"></div></a>
+<div id="mrecg_t2"><p>Neste mapa vocês podem conferir nossas principais recomendações de serviços na região.</p></div>
+
+<div id="overlay_mrecg2"><div id="mrecg_large2"></div><div class='pin_mrecg2'><div id="pin1_mrecg2"></div></div><div class='pulse_mrecg2'><div id="pulse1_mrecg2"</div></div></div></div>
+
+<!-- COMEÇO MRECG FUNCTION -->
+
+<div id="regras_colap2">
+<button class="accordion2">Contatos das recomendações</button>
+<div class="panel2">
+  <p><br/><p>-Banana's Beach Club - boate com shows (12) 3863 - 1644<br>
+-Passeio de barco para as ilhas - falar com Tide (12) 99611-2529<br>
+-Passeio de barco para a ilha dos gatos e praia brava - falar com André (12) 99705-6636</br>
+-Escolas de Surf - falar com Heitor (12) 99512-9012 ou Rodrigo (12) 99759-0968<br>
+-Banana Boat - passeio aquático - falar com Junior (11) 99911-37641<br>
+  
+-Mirante Bar Baleia - vista, petiscos e bebidas - (12) 3863-6250<br>
+  
+-Mirante de Boiçucanga - passeios de paraglider - falar com Maresias Tur (12) 99650 - 9051</br>
+-Sirena Maresias - balada com shows (11) 3071 - 2445</br>
+-Parador Maresias - balada com shows (11) 2769 - 1112</br>
+<br/><br/></p>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- FIM MRECG FUNCTION -->
+
+<!-- FIM MAPA DAS RECOMENDACOES GERAIS -->
+
+<!-- COMEÇO MAPA DAS RECOMENDACOES ESPECIFICAS -->
+<a href="img/mapa_boi_recomends.jpg" download="mapa_recomendacoes_locais"><div id="mrece_thumb2"></div></a>
+<div id="mrece_t2"><p>Neste mapa vocês podem conferir as nossas principais recomendações de serviços em Boiçucanga.</p></div>
+
+<div id="overlay_mrece2"><div id="mrece_large2"></div><div class='pin_mrece2'><div id="pin1_mrece2"></div></div><div class='pulse_mrece2'><div id="pulse1_mrece2"</div></div></div></div>
+<!-- FIM MAPA DAS RECOMENDACOES ESPECIFICAS -->
+
+<div id="gomap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.3059877707977!2d-45.6133956!3d-23.7749202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!5e0!3m2!1spt-BR!2sbr!4v1538500894932" width="784" height="441" frameborder="0" style="border:0" allowfullscreen id="gmap"></iframe></div>
+
+<div id="gomap_t"><p>Neste mapa vocês podem conferir a nossa localização interagindo com o Googlemaps. OBS: O Google ainda não reconhece a Rua Flamboyant.</p></div>
+
+<div id="gomap1420"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5630.671662571286!2d-45.616343620528184!3d-23.776897267150837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!5e0!3m2!1spt-BR!2sbr!4v1538511015579" width="586" height="330" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="gomap768"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d912.8026103401568!2d-45.61352780577895!3d-23.775519453242453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x94d27fc2708c4ae1%3A0x3d75ea2d67fab0ff!2sR.+Itajub%C3%A1%2C+63+-+Praia+de+Boi%C3%A7ucanga%2C+S%C3%A3o+Sebasti%C3%A3o+-+SP%2C+11600-000!3m2!1d-23.775103899999998!2d-45.613171699999995!5e0!3m2!1spt-BR!2sbr!4v1540599476939" width="1014" height="570" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+<div id="gomap360"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d912.8059886663757!2d-45.6130195!3d-23.7750381!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1538674895272" width="296" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+
+
+</div>
+</div>
+
+<!-- FIM DOS BOTOES-->
+
+
+
+<!-- pro topo início -->
+<div onclick="topFunction()" id="pro_topo"><img src="img/pro_topo1_e1.png" alt="pro_topo" width="74" height="76" id="pro_topo2" /></div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("pro_topo").style.opacity = "0.8";
+    } else {
+        document.getElementById("pro_topo").style.opacity = "0";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<!-- pro topo fim -->
+
+<!-- teste do menu em faixas horizontais-->
+<div id="menu_horiz_config2">
+ <div class="navbar2">
+  <div id=mob_boi><a href="index_boibana.html">Boibana</a></div>
+  <div id=mob_gal><a href="index_galerias.html" class="current">Galerias</a></div>
+  <div id=mob_exp><a href="index_experiencias.html">Experiências</a> </div>
+  <div id=mob_qsomos><a href="index_qsomos.html">Quem Somos</a></div>
+  <div id=mob_for><a href="index_forum.html">Fórum</a></div> 
+  <div id=mob_cont><a href="index_contatos.html">Contatos</a></div>
+  	
+ </div>
+</div>
+
+<div id="menu_horiz_config2f">
+ <div id="bgmenuf_shover">
+ <div class="navbar2">
+  <div id=mob_boi><a href="index_boibana.html">Boibana</a></div>
+  <div id=mob_gal><a href="index_galerias.html" class="current">Galerias</a></div>
+  <div id=mob_exp><a href="index_experiencias.html">Experiências</a> </div>
+  <div id=mob_qsomos><a href="index_qsomos.html">Quem Somos</a></div>
+  <div id=mob_for><a href="index_forum.html">Fórum</a></div> 
+  <div id=mob_cont><a href="index_contatos.html">Contatos</a></div>
+  	
+ </div>
+ </div>
+</div>
+
+<div id=bgmenu></div>
+
+<!-- fim do teste menu faixas horizontais-->
+
+<!-- FIM ID sHOVER FIM ID sHOVER -->
+
+</div>
+       
+<!-- FIM ID sHOVER FIM ID sHOVER -->
+
+<div id=kbca2></div>
+<div id=marca></div>
+
+
+<!-- COMEÇO BOTOES BAIXAR COM HOVER -->
+<div id="baixar_hover">
+
+<div id="baixar_msp"><a href="img/mapa_sp_boi.jpg" download="mapa_sp_boicucanga"><p>Baixar este mapa   <img src="img/baixar_20.png" width="20" height="20" alt="baixar" /></p></a></div>
+
+<div id="baixar_mboi"><a href="img/mapa_boi_boibana.jpg" download="mapa_sp_boicucanga"><p>Baixar este mapa   <img src="img/baixar_20.png" width="20" height="20" alt="baixar" /></p></a></div>
+
+<div id="baixar_mpra"><a href="img/mapa_praias.jpg" download="mapa_sp_boicucanga"><p>Baixar este mapa   <img src="img/baixar_20.png" width="20" height="20" alt="baixar" /></p></a></div>
+
+<div id="baixar_mrecg"><a href="img/gmapa_recomends.jpg" download="mapa_sp_boicucanga"><p>Baixar este mapa   <img src="img/baixar_20.png" width="20" height="20" alt="baixar" /></p></a></div>
+
+<div id="baixar_mrece"><a href="img/mapa_boi_recomends.jpg" download="mapa_sp_boicucanga"><p>Baixar este mapa   <img src="img/baixar_20.png" width="20" height="20" alt="baixar" /></p></a></div>
+
+</div>
+<!-- FIM BOTOES BAIXAR COM HOVER -->
+
+<!-- FECHAMENTO DE DIVS FANTASMAS -->
+
+<!-- FECHAMENTO DE DIVS FANTASMAS -->
+
+<div id="rodape">
+<div id="roda1">Endereço: Rua Flamboyant, 75, Boiçucanga, cep 11618-580</div>
+<div id="roda2">E-mail: boibana@boibana.com.br</div>
+</div>
+
+</body>
+</html>

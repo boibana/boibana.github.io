@@ -1,0 +1,101 @@
+@charset "utf-8";
+*{
+	background-color: #3d4973;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	z-index: -1;
+}
+#loader {
+	background-color: #3d4973;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 201;
+	animation: load1 1s ease-in 1;
+	animation-delay: 0.75s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load1 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#marca {
+	background-image: url("img/marca_1900.jpg");
+	width: 139px; 
+	height: 116px;
+	position: absolute;
+	left: 10%;
+	top: 163px;
+	z-index: 1;
+}
+#breve {
+	background-color: transparent;
+	position: absolute;
+	top: 326px;
+	left: 40%;
+	z-index: 1;
+	vertical-align: central;
+}
+#breve p{
+	padding: 15px;
+}
+#fundo {
+	display: block;
+	background-image: url("img/gopro1332.jpg");
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 750px;
+	position: absolute;
+	top: 163px;
+	left: 30%;
+	z-index: 0;
+}
+
+@media screen and (max-width: 1900px) {
+* {
+	--largura: 1420px;
+}
+
+#breve {
+	top: 287px; 
+	transform: scale(0.8,0.8);
+	}
+#fundo { 
+	top: 87px;
+	transform: scale(0.8,0.8);
+	}
+	
+}
+
+@media screen and (max-width: 1300px) {
+* {
+	--largura: 1260px;
+}
+
+#breve { 
+	transform: scale(0.8,0.8);
+	top: 283px;
+	left: 35%;
+	}
+#fundo { 
+	transform: scale(0.8,0.8);
+	top: 263px;
+	left: 0%;
+	}
+	
+}
+	
+		

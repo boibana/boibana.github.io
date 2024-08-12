@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chalés Boibana</title>
+<link href="estilo_em_breve1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="loader"></div>
+
+<div id="marca"></div>
+
+<script>
+var countDownDate = new Date("Dec 15, 2018 16:00:00").getTime();
+
+var countdownfunction = setInterval(function() {
+
+    var agora = new Date().getTime();
+    
+    var distance = countDownDate - agora;
+    
+    var dias = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var horas = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutos = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var segundos = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("demo").innerHTML = dias + "d " + horas + "h "
+    + minutos + "m " + segundos + "s ";
+    
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+<div id="fundo"><div id="breve">
+Chalés Boibana
+<br>
+Em Breve
+<br>
+<p id="demo" style="font-size:30px"></p>
+</div></div>
+
+</body>
+</html>

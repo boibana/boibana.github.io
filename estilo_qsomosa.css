@@ -1,0 +1,1089 @@
+* {	
+	padding: 0;
+	margin: 0;
+	color: #d1d3d4;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	-webkit-font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--corquadrados: white;
+	--corkbca: #3d4973;
+	--opacaixas: 0.3;
+	--corcaixas: black;
+	--corcaixas2: rgba(0, 0, 0, 0.3);
+	--corcurrent: #abecfe;
+}
+#fundo {
+	background-color: var(--corkbca);
+	background-repeat: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--largura);
+	height: var(--altura);
+	z-index: -10;
+}
+#snos {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col1);
+	width: var(--width1);
+	height: var(--height2);
+}
+#snos p {
+	position: absolute;
+	font-size: var(--tts2nos);
+	top: var(--top1t);
+	left: var(--col1t);
+}
+#snost p {
+	padding: var(--pad);
+	font-size: var(--ttsnos);
+	top: var(--top1tp);
+	left: var(--col1tp);
+}
+#qmama {
+	position: absolute;
+	top: var(--top2);
+	left: var(--col1);
+	width: var(--width1);
+	height: var(--height1);
+}
+#qmamat {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col1);
+	width: var(--width1);
+	height: var(--line1);
+}
+#qmamat p {
+	padding: var(--pad);
+	font-size: var(--tts3);
+	text-align: center;
+	line-height: var(--line1);
+}
+#ssite {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top3);
+	left: var(--col1);
+	width: var(--width1);
+	height: var(--height3);
+}
+#ssite p {
+	position: absolute;
+	font-size: var(--tts2);
+	top: var(--top3t);
+	left: var(--col1t);
+}
+#ssitt p {
+	padding: var(--pad);
+	font-size: var(--ttssit);
+	top: var(--top3tp);
+	left: var(--col1tp);
+}
+#ssitt p a {
+	color: var(--corcurrent);
+}
+#ssitt p a:hover {
+	color: var(--corquadrados);
+}
+#scha {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top1m);
+	left: var(--col2);
+	width: var(--width2);
+	height: var(--height2);
+}
+#scha p {
+	position: absolute;
+	font-size: var(--tts2);
+	top: var(--top1tm);
+	left: var(--col2t);
+}
+#schat p {
+	padding: var(--pad);
+	font-size: var(--tts);
+	top: var(--top1tpm);
+	left: var(--col2tp);
+}
+#schat p a {
+	font-size: var(--tts);
+	color: #abecfe;
+}
+#schat #regras:hover {
+	font-size: var(--thover);
+}
+#qpapa {
+	position: absolute;
+	top: var(--top2m);
+	left: var(--col2);
+	width: var(--width1);
+	height: var(--height1);
+}
+#qpapat {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top2tm);
+	left: var(--col2);
+	width: var(--width1);
+	height: var(--line1);
+}
+#qpapat p {
+	padding: var(--pad);
+	font-size: var(--tts3);
+	text-align: center;
+	line-height: var(--line1);
+}
+#marc {
+	background-color: var(--corcaixas2);
+	position: absolute;
+	top: var(--top3m);
+	left: var(--col2);
+	width: var(--width1);
+	height: var(--height3);
+}
+#marcag {
+	background-repeat: no-repeat;
+	width: var(--marca_larg2);
+	height: var(--marca_alt);
+	position: absolute;
+	top: var(--top4);
+	left: var(--colm1);
+}
+#marcagt p {
+	font-size: var(--tts0);
+	position: absolute;
+	text-align: center;
+	width: var(--marca_larg1);
+	top: var(--top4t);
+	left: var(--colm1);
+}
+#marcaqi {
+	width: var(--marca_larg2);
+	height: var(--marca_alt);
+	position: absolute;
+	top: var(--top4);
+	left: var(--colm2);
+}
+#marcat p {
+	font-size: var(--tts0);
+	position: absolute;
+	text-align: center;
+	width: var(--marca_larg2);
+	top: var(--top4t2);
+	left: var(--colm2);
+}
+#flecha {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: var(--topflecha);
+	left: var(--colflecha);
+	transform: scale(0.5,1);
+	z-index: 1000;
+}
+
+@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+* {
+	--largura: 1900px;
+	--altura: 2259px;
+	--top1: 280px;
+	--top1t: 20px;
+	--top1tp: 30px;
+	--top1m: 280px;
+	--top1tm: 20px;
+	--top1tpm: 30px;
+	--top2: 1118px;
+	--top2t: 1725px;
+	--top2m: 1118px;
+	--top2tm: 1725px;
+	--top3: 1960px;
+	--top3t: 20px;
+	--top3tp: 30px;
+	--top3m: 1960px;
+	--top3tm: 20px;
+	--top3tpm: 30px;
+	--top4: 1990px;
+	--top4t: 2120px;
+	--top4t2: 2130px;
+	--col1t: 40px;
+	--col1: 92px;
+	--col2t: 43px;
+	--col2tb: 43px;
+	--col2: 996px;
+	--colm1: 1155px;
+	--colm2: 1482px;
+	--width1: 812px;
+	--width2: 812px;
+	--height1: 607px;
+	--height2: 777px;
+	--height3: 237px;
+	--tts0: 20px;
+	--tts: 30px;
+	--tts2: 47px;
+	--tts3: 25px;
+	--ttsnos: 29px;
+	--tts2nos: 46px;
+	--thover: 47px;
+	--margem_p: 50px;
+	--pad: 60px;
+	--ttssit: 27px;
+	--marca_larg1: 127px;
+	--marca_larg2: 152px;
+	--marca_alt: 127px;
+	--topflecha: 1970px;
+	--colflecha: 1275px; 
+    --cor_rodap: #26304b;
+    --toproda: 2259px;
+	--ttsr: 30px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col2);
+}
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 200%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load1g 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load1g {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1900/cabecalho_1900a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 165px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+#qmama {
+	background-image: url(img/1900/pintura_mama_1900_t2.jpg);
+}
+#qpapa {
+	background-image: url(img/1900/pintura_papa_1900_2.jpg);
+}
+#marcag {
+	background-image: url(img/gif_marca_127px_t2.gif);
+	left: 1140px;
+}
+#marcaqi {
+	background-image: url(img/1900/marca_127px.jpg);
+}
+#flecha {
+	background-image: none;
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: 1817px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(1,1);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: 1817px;
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.5,0.5);
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 165px;
+	max-width: var(--largura);
+	float: none;
+	z-index: 1;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+
+/* Navigation links */
+.navbar a {
+	
+  width: 316px;
+  height: 57px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+  float: left;
+  position: static;
+  text-decoration: none;
+}
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: #bcbec0;
+  text-decoration: none;
+  font-size: 25px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: white;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+/* FIM MENU HORIZONT */
+} /* FIM DA TELA FULL HD 1920 */
+
+/* COMEÇO DA TELA HD 1440 */
+@media screen and (max-width: 1900px) {
+* {
+	--largura: 1420px;
+	--altura: 1905px;
+	--top1: 287px;
+	--top1t: 20px;
+	--top1tp: 20px;
+	--top1m: 287px;
+	--top1tm: 20px;
+	--top1tpm: 20px;
+	--top2: 937px;
+	--top2t: 1492px;
+	--top2m: 937px;
+	--top2tm: 1492px;
+	--top3: 1655px;
+	--top3t: 20px;
+	--top3tp: 20px;
+	--top3m: 1655px;
+	--top3tm: 20px;
+	--top3tpm: 20px;
+	--top4: 1672px;
+	--top4t: 1802px;
+	--top4t2: 1812px;	
+	--col1t: 28px;
+	--col1tb: 38px;
+	--col1: 43px;
+	--col2t: 33px;
+	--col2tb: 43px;
+	--col2: 733px;
+	--colm1: 824px;
+	--colm2: 1082px;
+	--width1: 608px;
+	--width2: 608px;
+	--width1a: 500px;
+	--height1: 555px;
+	--height2: 590px;
+	--height3: 203px;
+	--tts: 23px;
+	--tts0: 17px;
+	--tts2: 30px;
+	--tts3: 20px;
+	--ttsnos: 22px;
+	--tts2nos: 29px;
+	--thover: 35px;
+	--margem_p: 50px;
+	--pad: 40px;
+	--ttssit: 24px;
+	--marca_larg1: 127px;
+	--marca_larg2: 152px;
+	--marca_alt: 127px;
+	--topflecha: 1645px;
+	--colflecha: 915px; 
+    --cor_rodap: #26304b;
+    --toproda: 1905px;
+	--ttsr: 24px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col2);
+}
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	position: absolute;
+	left: 0;
+	height: 200%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load2 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load2 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1420/cabecalho_1420a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 171px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+#qmama {
+	background-image: url(img/1420/pintura_mama_1420_t2.jpg);
+}
+#qpapa {
+	background-image: url(img/1420/pintura_papa_1420_2.jpg);
+}
+#marcag {
+	background-image: url(img/gif_marca_127px_t2.gif);
+	left: 809px;
+}
+#marcaqi {
+	background-image: url(img/1900/marca_127px.jpg);
+}
+#flecha {
+	background-image: none;
+}
+#snost p {
+	width: var(--width1a);
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 220px;
+	left: 1342px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.7,0.7);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 220px;
+	left: 1342px;
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 40px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.35,0.35)
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 171px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 171px;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+
+/* Navigation links */
+.navbar a {
+  width: 236px;
+  height: 59px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+.subnav1 {
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  z-index: 5;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: #bcbec0;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: white;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+
+
+
+}
+/* FIM DA TELA FULL HD 1440 */
+
+
+
+@media screen and (max-width: 1300px) {
+* {
+	--largura: 1260px;
+	--altura: 5250px;
+	--top1: 483px;
+	--top1t: 20px;
+	--top1tp: 50px;
+	--top2: 1533px;
+	--top2t: 2291px;
+	--top2tp: 1291px;
+	--top3: 4860px;
+	--top3t: 20px;
+	--top3tp: 50px;
+	--top1m: 2481px;
+	--top1tm: 20px;
+	--top1tpm: 50px;
+	--top2m: 3475px;
+	--top2tm: 4235px;
+	--top2tpm: 4230px;
+	--top3m: 4480px;
+	--top3tm: 20px;
+	--top3tpm: 50px;
+	--top4: 4520px;
+	--top4b: 400px;
+	--top4t: 4660px;
+	--top4t2: 4660px;
+	--col1t: 30px;
+	--col1tb: 30px;
+	--col1: 123px;
+	--col2t: 30px;
+	--col2tb: 30px;
+	--col2: 123px;
+	--col2r: 717px;
+	--colm1: 345px;
+	--colm2: 717px;
+	--width1: 1014px;
+	--width2: 1014px;
+	--height1: 758px;
+	--height2: 980px;
+	--height2b: 911px;
+	--height3: 300px;
+	--height3b: 300px;
+	--tts: 40px;
+	--tts0: 34px;
+	--tts2: 45px;
+	--tts3: 38px;
+	--ttsnos: 39px;
+	--tts2nos: 44px;
+	--thover: 35px;
+	--margem_p: 50px;
+	--pad: 40px;
+	--ttssit: 40px;
+	--marca_larg1: 227px;
+	--marca_larg2: 152px;
+	--marca_alt: 127px;
+	--topflecha: 4530px;
+	--colflecha: 490px;
+    --cor_rodap: #26304b;
+    --toproda: 5250px;
+	--ttsr: 25px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+	overflow: hidden;
+}
+#rodape #roda1{
+    position: absolute;
+    top: -15px;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    top: 15px;
+    left: var(--col1);
+}
+#marcagt p {
+	left: 295px;
+}
+#hover {
+	display: none;	
+}
+#shover {
+	display: inherit;	
+}
+#loader {
+	display: none;
+}
+#loaderfix {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 200%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load3 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load3 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/cabecalho_1260a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 305px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+#qmama {
+	background-image: url(img/pintura_mama_1300_t2.jpg);
+}
+#qpapa {
+	background-image: url(img/pintura_papa_1300_2.jpg);
+}
+#marcag {
+	background-image: url(img/gif_marca_127px_t2.gif);
+	left: 335px;
+}
+#marcaqi {
+	background-image: url(img/1900/marca_127px.jpg);
+}
+#flecha {
+	background-image: none;
+}
+#snost p {
+	width: inherit;
+}
+#scha {
+	height: var(--height2b);
+}
+#marc {
+	height: var(--height3b);
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 460px;
+	left: 1155px;
+	opacity: 1;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 460px;
+	left: 1155px;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+/* FIM BOTÃO TOP */
+
+#bgmenu {
+	position: absolute;
+	top: 305px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	background-color: #26304b;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf_shover {
+	background-color: #26304b;
+	position: fixed;
+	top: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: 0;
+	float: none;
+	
+}
+#menu_horiz_config2 {
+	position: absolute;
+	top: 305px;
+}
+#menu_horiz_config2f {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar2 .current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar2 {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+/* Navigation links */
+.navbar2 a {
+  width: 413px;
+  height: 59px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+
+#mob_boi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mob_gal {
+	position: absolute;
+	top: 0px;
+	left: 413px;
+}
+#mob_exp {
+	position: absolute;
+	top: 0px;
+	left: 826px;
+}
+#mob_qsomos {
+	position: absolute;
+	top: 59px;
+	left: 0px;
+}
+#mob_cont {
+	position: absolute;
+	top: 59px;
+	left: 826px;
+}
+#mob_for {
+	position: absolute;
+	top: 59px;
+	left: 413px;
+}
+/* FIM MENU HORIZONT */
+
+
+
+/* FIM DA TABLET e CEL 1240 */
+}
+/* FIM DA TABLET e CEL 1240 */

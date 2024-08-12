@@ -1,0 +1,3648 @@
+﻿@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--largura: 1900px;
+	--top1: -581px;
+	--top1t: 777px;
+	--top1tt: 17px;
+	--top2: 81px;
+	--top2t: 1437px;
+	--top3: 740px;
+	--top3t: 2097px;
+	--top4t: 1291px;
+	--top4: 1484px;
+	--top5: 1794px;
+	--top6: 2104px;
+	--col0t: 69px;
+	--col1: -1439px;
+	--col1t: 88px;
+	--col2: -515px;
+	--col2t: 1013px;
+	--width1: 784px;
+	--height1: 441px;
+	--fullwidth1: 3840px;
+	--fullheight1: 2160px;
+	--height2: 92px;
+	--scal_thumb: scale(0.2041,0.2041);
+	--scal_large: scale(0.35,0.35);
+	--altmlarge: 1069px;
+	--opacaixas: 0.3;
+	--tts: 29px;
+	--mts: 380px;
+	--topbaixar: 835px;
+	--leftbaixar: 1630px;
+	--corfontbase: #d1d3d4; /* cinza */
+	--corkbca: #3d4973; /* roxo claro */
+	--corbgmenu: #26304b; /* roxo escuro */
+	--corcurrent: #abecfe;	/* azul claro */
+	--corquadrados: white;
+	--corfonthover: white;
+	--corpin: red;
+	--corpin2: yellow;
+	--baixarsize: 23px;
+	--baixarsizeh: 24px;
+	--opacoverlay: 0.8;
+	--topfinal: 504px;
+	--topcolap: 775px;
+	--leftcolap: 800px;
+	--widthacord_colap: 320px;
+	--widthpanel_colap: 1650px;
+	--tts_colap: 20px;	
+    --cor_rodap: #26304b;
+    --toproda: 2300px;
+	--ttsr: 30px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+    color: var(--corfontbase);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1t);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col2t);
+}
+#deps_pergs {
+	position: absolute;
+	top: 2230px;
+	left: 88px;
+	width: 1800px;
+	height: auto;
+}
+#deps_pergs p {
+	font-size: var(--tts);
+	line-height: var(--tts);
+	color: var(--corfontbase);
+}
+#deps_pergs p a {
+	color: var(--corcurrent);
+}
+#deps_pergs p a:hover {
+	color: var(--corquadrados);
+}
+
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#baixar_hover {
+	display: inherit;
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 200%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load1 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load1 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1900/cabecalho_1900a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 165px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+
+#conteiner #fundo {
+	/*background-image: url(img/1900/g_mapas_1900_910_t1.jpg);*/
+	background-color: var(--corkbca);*/
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 2306px;
+	width: var(--largura);
+	z-index: -10;
+	font-family: var(--fontfam);
+	font-weight: normal;
+	font-size: 35px;
+	line-height: var(--height1);
+	text-align: center;
+	color: var(--corfontbase);
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: 1815px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(1,1);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: 1815px;
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.5,0.5)
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 165px;
+	max-width: var(--largura);
+	float: none;
+	z-index: 1;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);	
+}
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {
+	
+  width: 316px;
+  height: 57px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+  float: left;
+  position: static;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(var(#313f63)), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 25px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+/* FIM MENU HORIZONT */
+
+
+/* COMEÇO DAS ANIMAÇÕES dos botões */
+/* Bounce To Bottom */
+#menu_horiz_config .bounce_bottom {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#menu_horiz_config .bounce_bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#menu_horiz_config .bounce_bottom:hover, .bounce_bottom:focus, .bounce_bottom:active {
+  color: var(--corfonthover);
+}
+#menu_horiz_config .bounce_bottom:hover:before, .bounce_bottom:focus:before, .bounce_bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* FIM ANIMAÇÕES dos botões */
+
+/* COMEÇO BOTÕES GERAIS DA PÁGINA */
+
+/* COMEÇO MAPA SP-BOI */ 
+
+#conteiner #fundo #msp_t {
+	position: absolute;
+	top: var(--top1t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #msp_t p{
+	position: relative;
+	top: var(--top1tt);
+}
+#conteiner #fundo #msp_thumb {
+	background-image: url(img/mapa_sp_boi_2019_01.jpg);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #msp_thumb #shape_msp {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #msp_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #msp_thumb:hover {
+	animation: mapa1 1s ease;
+}
+#conteiner #fundo #msp_thumb:hover #shape_msp {
+	opacity: 0.15;
+}
+#conteiner #fundo #msp_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa1 {
+  0% {
+  top: -611px;
+  }
+  100% {
+  top: var(--top1);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_msp {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_msp #msp_large{
+	background-image: url(img/mapa_sp_boi_2019_01.jpg);
+    position: absolute;
+	top: -600px;
+	left: -970px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_msp:hover .pin_msp{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1610px;
+  top: 595px;;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_msp;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_msp:hover .pin_msp #pin1_msp{
+  opacity: 1;
+}
+#overlay_msp .pin_msp #pin1_msp{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_msp .pulse_msp {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1610px;
+  top: 595px;;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_msp .pulse_msp #pulse1_msp {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_msp:hover .pulse_msp #pulse1_msp {
+	opacity: 0;
+	animation: pulsate_msp 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_msp {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_msp {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 605px;}
+  100% {
+  top: 595px;}
+}
+#baixar_msp {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_msp p{
+	color: var(--corfontbase);
+}
+#baixar_msp:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* OVERLAY FIM */
+/* FIM MAPA SP-BOI */
+
+/* COMEÇO MAPA BOIÇU-BOIBAN */
+
+#conteiner #fundo #mboi_t {
+	position: absolute;
+	top: var(--top1t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mboi_t p{
+	position: relative;
+	top: var(--top1tt);
+}
+#conteiner #fundo #mboi_thumb {
+	background-image: url(img/mapa_boi_boibana_2019_01.jpg);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col2);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mboi_thumb #shape_mboi {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mboi_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mboi_thumb:hover {
+	animation: mapa2 1s ease;
+}
+#conteiner #fundo #mboi_thumb:hover #shape_mboi {
+	opacity: 0.15;
+}
+#conteiner #fundo #mboi_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa2 {
+  0% {
+  top: -611px;
+  }
+  100% {
+  top: var(--top1);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mboi {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mboi #mboi_large{
+	background-image: url(img/mapa_boi_boibana_2019_01.jpg);
+    position: absolute;
+	top: -600px;
+	left: -970px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mboi:hover .pin_mboi{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1422px;
+  top: 180px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mboi;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mboi:hover .pin_mboi #pin1_mboi{
+  opacity: 1;
+}
+#overlay_mboi .pin_mboi #pin1_mboi{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mboi .pulse_mboi {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1422px;
+  top: 180px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mboi .pulse_mboi #pulse1_mboi {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mboi:hover .pulse_mboi #pulse1_mboi {
+	opacity: 0;
+	animation: pulsate_mboi 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mboi {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mboi {
+  0% {
+  opacity: 0;
+  top: 0%;}
+  90% {
+  opacity: 1;
+  top: 190px;}
+  100% {
+  top: 180px;}
+}
+/* OVERLAY FIM */
+#baixar_mboi {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_mboi p{
+	color: var(--corfontbase);
+}
+#baixar_mboi:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA BOIÇU-BOIBANA */  
+
+/* COMEÇO MAPA DAS PRAIAS */ 
+
+#conteiner #fundo #mpra_t {
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mpra_t p{
+	position: relative;
+	top: var(--top1tt);
+}
+#conteiner #fundo #mpra_thumb {
+	background-image: url(img/mapa_praias_2019_01.jpg);
+	position: absolute;
+	top: var(--top2);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mpra_thumb #shape_mpra{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mpra_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mpra_thumb:hover {
+	animation: mapa3 1s ease;
+}
+#conteiner #fundo #mpra_thumb:hover #shape_mpra {
+	opacity: 0.15;
+}
+#conteiner #fundo #mpra_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa3 {
+  0% {
+  top: 51px;
+  }
+  100% {
+  top: var(--top2);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mpra {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mpra #mpra_large{
+	background-image: url(img/mapa_praias.jpg);
+    position: absolute;
+	top: -600px;
+	left: -970px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mpra:hover .pin_mpra{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 967px;
+  top: 327px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mpra;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mpra:hover .pin_mpra #pin1_mpra{
+  opacity: 1;
+}
+#overlay_mpra .pin_mpra #pin1_mpra{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mpra .pulse_mpra {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 967px;
+  top: 327px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mpra .pulse_mpra #pulse1_mpra {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mpra:hover .pulse_mpra #pulse1_mpra {
+	opacity: 0;
+	animation: pulsate_mpra 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mpra {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mpra {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 332px;}
+  100% {
+  top: 327px;}
+}
+/* OVERLAY FIM */
+#baixar_mpra {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_mpra p{
+	color: var(--corfontbase);
+}
+#baixar_mpra:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA DAS PRAIAS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrecg_t {
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrecg_t p{
+	position: relative;
+	top: var(--top1tt);
+}
+#conteiner #fundo #mrecg_thumb {
+	background-image: url(img/mapa_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top2);
+	left: var(--col2);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mrecg_thumb #shape_mrecg{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mrecg_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mrecg_thumb:hover {
+	animation: mapa4 1s ease;
+}
+#conteiner #fundo #mrecg_thumb:hover #shape_mrecg {
+	opacity: 0.15;
+}
+#conteiner #fundo #mrecg_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa4 {
+  0% {
+  top: 51px;
+  }
+  100% {
+  top: var(--top2);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mrecg {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mrecg #mrecg_large{
+	background-image: url(img/mapa_recomends_2019_01.jpg);
+    position: absolute;
+	top: -600px;
+	left: -970px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mrecg:hover .pin_mrecg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 967px;
+  top: 327px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mrecg;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mrecg:hover .pin_mrecg #pin1_mrecg{
+  opacity: 1;
+}
+#overlay_mrecg .pin_mrecg #pin1_mrecg{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mrecg .pulse_mrecg {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 967px;
+  top: 327px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrecg .pulse_mrecg #pulse1_mrecg {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrecg:hover .pulse_mrecg #pulse1_mrecg {
+	opacity: 0;
+	animation: pulsate_mrecg 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrecg {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrecg {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 332px;}
+  100% {
+  top: 327px;}
+}
+/* OVERLAY FIM */
+#baixar_mrecg {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_mrecg p{
+	color: var(--corfontbase);
+}
+#baixar_mrecg:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+
+#regras_colap {
+	position: fixed;
+	top: var(--topcolap);
+	left: var(--leftcolap);
+	display: none;
+	z-index: 10;
+}
+.accordion {
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: var(--widthacord_colap);
+	border: 1px solid var(--corquadrados);
+	text-align: left;
+	outline: none;
+	font-size: var(--tts_colap);
+	transition: 0.4s;
+	font-family: var(--fontform);
+	white-space: normal;
+	z-index: 10;
+	text-align: center;
+}
+.active1, .accordion:hover {
+    background-color: var(--corbgmenu);
+    z-index: 10;
+}
+.panel {
+    position: absolute;
+	top: -200px;
+	left: -250px;
+	padding: 0 20px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	font-size: 20px;
+	line-height: 20px;
+	color: black;
+	width: var(--widthpanel_colap);
+	text-indent:0em;
+	z-index: 10;
+	text-align: left;
+}
+
+
+/* FIM MAPA DAS RECOMENDACOES GERAIS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrece_t {
+	position: absolute;
+	top: var(--top3t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrece_t p{
+	position: relative;
+	top: var(--top1tt);
+}
+#conteiner #fundo #mrece_thumb {
+	background-image: url(img/mapa_boi_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top3);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mrece_thumb #shape_mrece{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mrece_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mrece_thumb:hover {
+	animation: mapa5 1s ease;
+}
+#conteiner #fundo #mrece_thumb:hover #shape_mrece {
+	opacity: 0.15;
+}
+#conteiner #fundo #mrece_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa5 {
+  0% {
+  top: 710px;;
+  }
+  100% {
+  top: var(--top3);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mrece {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mrece #mrece_large{
+	background-image: url(img/mapa_boi_recomends_2019_01.jpg);
+    position: absolute;
+	top: -600px;
+	left: -970px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mrece:hover .pin_mrece{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1422px;
+  top: 180px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mrece;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mrece:hover .pin_mrece #pin1_mrece{
+  opacity: 1;
+}
+#overlay_mrece .pin_mrece #pin1_mrece{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mrece .pulse_mrece {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1422px;
+  top: 180px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrece .pulse_mrece #pulse1_mrece {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrece:hover .pulse_mrece #pulse1_mrece {
+	opacity: 0;
+	animation: pulsate_mrece 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrece {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrece {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 185px;}
+  100% {
+  top: 180px;}
+}
+/* OVERLAY FIM */
+#baixar_mrece {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_mrece p{
+	color: var(--corfontbase);
+}
+#baixar_mrece:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA DAS RECOMENDACOES ESPECIFICAS */
+
+#gomap {
+	display: inherit;
+	position: absolute;
+	left: var(--col2t);
+	top: 1600px;
+	-webkit-filter: hue-rotate(180deg); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(180deg);
+    -webkit-filter: greyscale(50%); /* Safari 6.0 - 9.0 */
+    filter: greyscale(50%);
+    -webkit-filter: saturate(170%); /* Safari 6.0 - 9.0 */
+    filter: saturate(170%);
+     -webkit-filter: brightness(95%); /* Safari 6.0 - 9.0 */
+    filter: brightness(95%);
+	z-index: -9;
+	opacity: 1;
+}
+#gomap_t {
+	position: absolute;
+	top: var(--top3t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--tts);
+	font-size: var(--tts);
+	border: 1px var(--corquadrados) solid;
+}
+#gomap_t p{
+	position: relative;
+	top: var(--top1tt);
+	font-family: var(--fontfam);
+	text-align: center;
+}
+#gomap:hover {
+	animation: mapa6 1s ease;
+}
+@keyframes mapa6 {
+  0% {
+  top: 1570px;
+  }
+  100% {
+  top: 1600px;	
+  }
+}
+
+#gomap1420 {
+	display: none;
+}
+#gomap768 {
+	display: none;
+}
+#gomap360 {
+	display: none;
+}
+/* FIM BOTÕES GERAIS DA PÁGINA */
+
+} /* FIM DA TELA FULL HD 1920 */
+
+/* COMEÇO DA TELA HD 1440 */
+@media screen and (max-width: 1900px) {
+ /*	COMEÇO DA TELA FULL HD 1420 */
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--largura: 1420px;
+	--top1: -626px;
+	--top1t: 676px;
+	--top1tt: 11px;
+	--top2: -89px;
+	--top2t: 1215px;
+	--top3: 445px;
+	--top3t: 1754px;
+	--top4t: 1291px;
+	--top4: 1484px;
+	--top5: 1794px;
+	--top6: 2104px;
+	--col0t: 69px;
+	--col1: -1543px;
+	--col1t: 83px;
+	--col2: -875px;
+	--col2t: 751px;
+	--width1: 586px;
+	--height1: 330px;
+	--fullwidth1: 3840px;
+	--fullheight1: 2160px;
+	--height2: 69px;
+	--scal_thumb: scale(0.1526,0.1526);
+	--scal_large: scale(0.3,0.3);
+	--altmlarge: 648px;
+	--opacaixas: 0.3;
+	--tts: 29px;
+	--tts2: 25px;
+	--mts: 380px;
+	--mtts1420: 21px;
+	--topbaixar: 690px;
+	--leftbaixar: 1300px;
+	--corfontbase: #d1d3d4; /* cinza */
+	--corkbca: #3d4973; /* roxo claro */
+	--corbgmenu: #26304b; /* roxo escuro */
+	--corcurrent: #abecfe;	/* azul claro */
+	--corquadrados: white;
+	--corfonthover: white;
+	--corpin: red;
+	--corpin2: yellow;
+	--baixarsize: 14px;
+	--baixarsizeh: 15px;
+	--opacoverlay: 0.8;
+	--topcolap: 775px;
+	--leftcolap: 800px;
+	--widthacord_colap: 320px;
+	--widthpanel_colap: 1650px;
+	--tts_colap: 20px;
+    --tts_colap: 20px;	
+    --cor_rodap: #26304b;
+    --toproda: 1950px;
+	--ttsr: 24px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+    color: var(--corfontbase);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1t);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col2t);
+}
+#deps_pergs {
+	position: absolute;
+	top: 1870px;
+	left: 88px;
+	width: 1300px;
+	height: auto;
+}
+#deps_pergs p {
+	font-size: var(--tts2);
+	line-height: var(--tts2);
+	color: var(--corfontbase);
+}
+#deps_pergs p a {
+	color: var(--corcurrent);
+}
+#deps_pergs p a:hover {
+	color: var(--corquadrados);
+}
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#baixar_hover {
+	display: inherit;
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);*/
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load2 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load2 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1420/cabecalho_1420a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 171px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+
+#conteiner #fundo {
+	/*background-image: url(img/1900/g_mapas_1900_910_t1.jpg);*/
+	background-color: var(--corkbca);*/
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 1960px;
+	width: var(--largura);
+	z-index: -10;
+	font-family: var(--fontfam);
+	font-weight: normal;
+	font-size: 35px;
+	line-height: var(--height1);
+	text-align: center;
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 220px;
+	left: 1342px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.7,0.7);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 220px;
+	left: 1342px;
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.35,0.35)
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 171px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 171px;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);
+}
+/* The navigation menu */
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {
+  width: 236px;
+  height: 59px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  z-index: 5;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+
+/* FIM ANIMAÇÕES dos botões */
+
+/* COMEÇO BOTÕES GERAIS DA PÁGINA */
+
+/* COMEÇO MAPA SP-BOI */ 
+
+#conteiner #fundo #msp_t {
+	position: absolute;
+	top: var(--top1t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #msp_t p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #msp_thumb {
+	background-image: url(img/mapa_sp_boi_2019_01.jpg);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #msp_thumb #shape_msp {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #msp_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #msp_thumb:hover {
+	animation: mapa1 1s ease;
+}
+#conteiner #fundo #msp_thumb:hover #shape_msp {
+	opacity: 0.15;
+}
+#conteiner #fundo #msp_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa1 {
+  0% {
+  top: -656px;;
+  }
+  100% {
+  var(--top1);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_msp {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_msp #msp_large{
+	background-image: url(img/mapa_sp_boi_2019_01.jpg);
+    position: absolute;
+	top: -674px;
+	left: -1209px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_msp:hover .pin_msp{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1277px;
+  top: 502px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_msp;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_msp:hover .pin_msp #pin1_msp{
+  opacity: 1;
+}
+#overlay_msp .pin_msp #pin1_msp{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_msp .pulse_msp {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1277px;
+  top: 502px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_msp .pulse_msp #pulse1_msp {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_msp:hover .pulse_msp #pulse1_msp {
+	opacity: 0;
+	animation: pulsate_msp 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_msp {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_msp {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 507px;}
+  100% {
+  top: 502px;}
+}
+#baixar_msp {
+	font-family: var(--fontfam);
+	position: fixed;
+	width: 100px;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	font-size: var(--baixarsize);
+}
+#baixar_msp p{
+	color: var(--corfontbase);
+}
+#baixar_msp:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* OVERLAY FIM */
+/* FIM MAPA SP-BOI */
+
+/* COMEÇO MAPA BOIÇU-BOIBAN */
+
+#conteiner #fundo #mboi_t {
+	position: absolute;
+	top: var(--top1t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mboi_t p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mboi_thumb {
+	background-image: url(img/mapa_boi_boibana_2019_01.jpg);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col2);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mboi_thumb #shape_mboi {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mboi_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mboi_thumb:hover {
+	animation: mapa2 1s ease;
+}
+#conteiner #fundo #mboi_thumb:hover #shape_mboi {
+	opacity: 0.15;
+}
+#conteiner #fundo #mboi_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa2 {
+  0% {
+  top: -656px;
+  }
+  100% {
+  top: var(--top1);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mboi {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mboi #mboi_large{
+	background-image: url(img/mapa_boi_boibana_2019_01.jpg);
+    position: absolute;
+	top: -674px;
+	left: -1209px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mboi:hover .pin_mboi{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1115px;
+  top: 148px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mboi;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mboi:hover .pin_mboi #pin1_mboi{
+  opacity: 1;
+}
+#overlay_mboi .pin_mboi #pin1_mboi{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mboi .pulse_mboi {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1115px;
+  top: 148px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mboi .pulse_mboi #pulse1_mboi {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mboi:hover .pulse_mboi #pulse1_mboi {
+	opacity: 0;
+	animation: pulsate_mboi 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mboi {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mboi {
+  0% {
+  opacity: 0;
+  top: 0%;}
+  90% {
+  opacity: 1;
+  top: 153px;}
+  100% {
+  top: 148px;}
+}
+/* OVERLAY FIM */
+#baixar_mboi {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	width: 100px;
+	font-size: var(--baixarsize);
+}
+#baixar_mboi p{
+	color: var(--corfontbase);
+}
+#baixar_mboi:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA BOIÇU-BOIBANA */  
+
+/* COMEÇO MAPA DAS PRAIAS */ 
+
+#conteiner #fundo #mpra_t {
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mpra_t p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mpra_thumb {
+	background-image: url(img/mapa_praias_2019_01.jpg);
+	position: absolute;
+	top: var(--top2);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mpra_thumb #shape_mpra{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mpra_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mpra_thumb:hover {
+	animation: mapa3 1s ease;
+}
+#conteiner #fundo #mpra_thumb:hover #shape_mpra {
+	opacity: 0.15;
+}
+#conteiner #fundo #mpra_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa3 {
+  0% {
+  top: -119px;
+  }
+  100% {
+  top: var(--top2);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mpra {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mpra #mpra_large{
+	background-image: url(img/mapa_praias_2019_01.jpg);
+    position: absolute;
+	top: -674px;
+	left: -1209px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mpra:hover .pin_mpra{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 725.5px;
+  top: 272px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mpra;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mpra:hover .pin_mpra #pin1_mpra{
+  opacity: 1;
+}
+#overlay_mpra .pin_mpra #pin1_mpra{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mpra .pulse_mpra {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 725.5px;
+  top: 272px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mpra .pulse_mpra #pulse1_mpra {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mpra:hover .pulse_mpra #pulse1_mpra {
+	opacity: 0;
+	animation: pulsate_mpra 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mpra {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mpra {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 277;}
+  100% {
+  top: 272px;}
+}
+/* OVERLAY FIM */
+#baixar_mpra {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	width: 100px;
+	font-size: var(--baixarsize);
+}
+#baixar_mpra p{
+	color: var(--corfontbase);
+}
+#baixar_mpra:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA DAS PRAIAS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrecg_t {
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrecg_t p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mrecg_thumb {
+	background-image: url(img/mapa_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top2);
+	left: var(--col2);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mrecg_thumb #shape_mrecg{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mrecg_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mrecg_thumb:hover {
+	animation: mapa4 1s ease;
+}
+#conteiner #fundo #mrecg_thumb:hover #shape_mrecg {
+	opacity: 0.15;
+}
+#conteiner #fundo #mrecg_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa4 {
+  0% {
+  top: -119px;
+  }
+  100% {
+  top: var(--top2);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mrecg {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mrecg #mrecg_large{
+	background-image: url(img/mapa_recomends_2019_01.jpg);
+    position: absolute;
+	top: -674px;
+	left: -1209px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mrecg:hover .pin_mrecg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 725.5px;
+  top: 272px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mrecg;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mrecg:hover .pin_mrecg #pin1_mrecg{
+  opacity: 1;
+}
+#overlay_mrecg .pin_mrecg #pin1_mrecg{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mrecg .pulse_mrecg {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 725.5px;
+  top: 272px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrecg .pulse_mrecg #pulse1_mrecg {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrecg:hover .pulse_mrecg #pulse1_mrecg {
+	opacity: 0;
+	animation: pulsate_mrecg 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrecg {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrecg {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 277px;}
+  100% {
+  top: 272px;}
+}
+/* OVERLAY FIM */
+#baixar_mrecg {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	width: 100px;
+	font-size: var(--baixarsize);
+}
+#baixar_mrecg p{
+	color: var(--corfontbase);
+}
+#baixar_mrecg:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+
+#regras_colap {
+	position: fixed;
+	top: 655px;
+	left: 550px;
+	display: none;
+	z-index: 10;
+}
+.accordion {
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 320px;
+	border: 1px solid var(--corquadrados);
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+	font-family: var(--fontform);
+	white-space: normal;
+	z-index: 10;
+	text-align: center;
+}
+.active1, .accordion:hover {
+    background-color: var(--corbgmenu);
+    z-index: 10;
+}
+.panel {
+    position: absolute;
+	top: -165px;
+	left: -220px;
+	padding: 0 20px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	font-size: 18px;
+	line-height: 18px;
+	color: black;
+	width: 1650px;
+	text-indent:0em;
+	z-index: 10;
+	text-align: left;
+}
+/* FIM MAPA DAS RECOMENDACOES GERAIS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrece_t {
+	position: absolute;
+	top: var(--top3t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrece_t p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mrece_thumb {
+	background-image: url(img/mapa_boi_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top3);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+#conteiner #fundo #mrece_thumb #shape_mrece{
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 0;
+}
+#conteiner #fundo #mrece_thumb p {
+	position: relative;
+	top: 30%;
+	font-size: var(--mts);
+	line-height: var(--mts);
+	color: black;
+	opacity: 0;
+}
+#conteiner #fundo #mrece_thumb:hover {
+	animation: mapa5 1s ease;
+}
+#conteiner #fundo #mrece_thumb:hover #shape_mrece {
+	opacity: 0.15;
+}
+#conteiner #fundo #mrece_thumb:hover p {
+	opacity: 0.5;
+}
+@keyframes mapa5 {
+  0% {
+  top: 415px;
+  }
+  100% {
+  top: var(--top3);	
+  }
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mrece {
+    position: fixed;
+    display: none;
+    width: var(--largura);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,var(--opacoverlay));
+    z-index: 2;
+    cursor: pointer;
+}
+#overlay_mrece #mrece_large{
+	background-image: url(img/mapa_boi_recomends_2019_01.jpg);
+    position: absolute;
+	top: -674px;
+	left: -1209px;
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	z-index: 5;
+	transform: var(--scal_large);
+}
+#overlay_mrece:hover .pin_mrece{
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1115px;
+  top: 148px;
+  margin: -20px 0 0 -20px;
+  animation-name: bouncepin_mrece;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  z-index: 7;
+}
+#overlay_mrece:hover .pin_mrece #pin1_mrece{
+  opacity: 1;
+}
+#overlay_mrece .pin_mrece #pin1_mrece{
+  width: 14px;
+  height: 14px;
+  margin: 8px 0 0 8px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+#overlay_mrece .pulse_mrece {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 1115px;
+  top: 148px;
+  margin: 11px 0px 0px -12px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrece .pulse_mrece #pulse1_mrece {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	margin: -13px 0 0 -13px;
+	opacity: 0.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrece:hover .pulse_mrece #pulse1_mrece {
+	opacity: 0;
+	animation: pulsate_mrece 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrece {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(2, 2);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrece {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 153px;}
+  100% {
+  top: 148px;}
+}
+/* OVERLAY FIM */
+#baixar_mrece {
+	font-family: var(--fontfam);
+	position: fixed;
+	top: var(--topbaixar);
+	left: var(--leftbaixar);
+	display: none;
+	width: 100px;
+	font-size: var(--baixarsize);
+}
+#baixar_mrece p{
+	color: var(--corfontbase);
+}
+#baixar_mrece:hover p{
+	font-size: var(--baixarsizeh);
+	color: var(--corcurrent);
+}
+/* FIM MAPA DAS RECOMENDACOES ESPECIFICAS */
+
+#gomap1420 {
+	position: absolute;
+	left: var(--col2t);
+	top: 1360px;
+	-webkit-filter: hue-rotate(180deg); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(180deg);
+    -webkit-filter: greyscale(50%); /* Safari 6.0 - 9.0 */
+    filter: greyscale(50%);
+    -webkit-filter: saturate(170%); /* Safari 6.0 - 9.0 */
+    filter: saturate(170%);
+     -webkit-filter: brightness(95%); /* Safari 6.0 - 9.0 */
+    filter: brightness(95%);
+	z-index: -9;
+	opacity: 1;
+}
+#gomap_t {
+	position: absolute;
+	top: var(--top3t);
+	left: var(--col2t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#gomap_t p{
+	position: relative;
+	top: var(--top1tt);
+	font-family: var(--fontfam);
+	text-align: center;
+	color: var(--corfontbase);
+}
+#gomap1420:hover {
+	animation: mapa6 1s ease;
+}
+@keyframes mapa6 {
+  0% {
+  top: 1330px;
+  }
+  100% {
+  top: 1360px;	
+  }
+}
+
+#gomap {
+	display: none;
+}
+#gomap768 {
+	display: none;
+}
+#gomap360 {
+	display: none;
+}
+/* FIM BOTÕES GERAIS DA PÁGINA */
+
+}
+/* FIM DA TELA FULL HD 1440 */
+
+
+
+/* COMEÇO DA TABLET 768 */
+@media screen and (max-width: 1300px) {
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--largura: 1260px;
+	--top1: -311px;
+	--top1t: 1085px;
+	--top1tt: 24px;
+	--top2: 482px;
+	--top2t: 1878px;
+	--top3: 1275px;
+	--top3t: 2670px;
+	--top4: 2071px;
+	--top4t: 3472px;
+	--top5: 2867px;
+	--top5t: 4264px;
+	--top6: 4455px;
+	--top6t: 5056px;
+	--col0t: 49px;
+	--col1: -1293px;
+	--col1t: 119px;
+	--col2t: 418px;
+	--col2tr: 750px;
+	--width1: 1014px;
+	--height1: 570px;
+	--height2: 130px;
+	--fullwidth1: 3840px;
+	--fullheight1: 2160px;
+	--width2: 75px;
+	--opacaixas: 0.3;
+	--tts: 37px;
+	--tts2: 37px;
+	--scal_thumb: scale(0.264,0.264);
+	--scal_large: scale(0.264,0.264);
+	--altmlarge: 648px;
+	--mts: 380px;
+	--mtts1420: 40px;
+	--topbaixar: 690px;
+	--leftbaixar: 1300px;
+	--corfontbase: #d1d3d4; /* cinza */
+	--corkbca: #3d4973; /* roxo claro */
+	--corbgmenu: #26304b; /* roxo escuro */
+	--corcurrent: #abecfe;	/* azul claro */
+	--corquadrados: white;
+	--corfonthover: white;
+	--corpin: red;
+	--corpin2: yellow;
+	--baixarsize: 14px;
+	--baixarsizeh: 15px;
+	--opacoverlay: 0.8;
+	--topcolap: 3187px;
+	--leftcolap: 475px;
+	--widthacord_colap: 300px;
+	--widthpanel_colap: 1650px;
+	--tts_colap: 30px;
+	--tts_colap2: 28px;
+    --cor_rodap: #26304b;
+    --toproda: 5450px;
+	--ttsr: 25px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+	overflow: hidden;
+}
+#rodape #roda1{
+    position: absolute;
+    top: -15px;
+    left: var(--col1t);
+}
+#rodape #roda2{
+    position: absolute;
+    top: 15px;
+    left: var(--col1t);
+}
+#deps_pergs {
+	position: absolute;
+	top: 5300px;
+	left: 119px;
+	width: 1014px;
+	height: auto;
+}
+#deps_pergs p {
+	font-size: var(--tts2);
+	line-height: var(--tts2);
+	color: var(--corfontbase);
+}
+#deps_pergs p a {
+	color: var(--corcurrent);
+}
+#deps_pergs p a:hover {
+	color: var(--corquadrados);
+}
+#hover {
+	display: none;	
+}
+#shover {
+	display: inherit;	
+}
+#baixar_hover {
+	display: none;
+}
+#loader {
+	display: none;
+}
+#loaderfix {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load3 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load3 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/cabecalho_1260a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 305px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+#conteiner #fundo {
+	overflow: hidden;
+	background-color: var(--corkbca);
+	position: absolute;
+	height: 5450px;
+	width: var(--largura);
+	z-index: -10;
+	font-family: var(--fontfam);
+	font-weight: normal;
+	font-size: 30px;
+	line-height: var(--height1);
+	text-align: center;
+	color: var(--corfontbase);
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 456px;
+	left: 1160px;
+	opacity: 1;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.5,0.5);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	top: 456px;
+	left: 1160px;
+	opacity: 1;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.55,0.55);
+}
+#pro_topo #marca{
+	display: none;
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 305px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	background-color: var(--corbgmenu);
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf_shover {
+	background-color: var(--corbgmenu);
+	position: fixed;
+	top: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: 0;
+	float: none;
+	
+}
+#menu_horiz_config2 {
+	position: absolute;
+	top: 305px;
+}
+#menu_horiz_config2f {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar2 .current {
+	color: var(--corcurrent);
+}
+/* The navigation menu */
+.navbar2 {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+/* Navigation links */
+.navbar2 a {
+  background-color: var(--corbgmenu);
+  width: 420px;
+  height: 59px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+    color: var(--corfontbase);
+}
+
+#mob_boi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mob_gal {
+	position: absolute;
+	top: 0px;
+	left: 420px;
+}
+#mob_exp {
+	position: absolute;
+	top: 0px;
+	left: 840px;
+}
+#mob_qsomos {
+	position: absolute;
+	top: 59px;
+	left: 0px;
+}
+#mob_cont {
+	position: absolute;
+	top: 59px;
+	left: 420px;
+}
+#mob_for {
+	position: absolute;
+	top: 59px;
+	left: 840px;
+}
+
+/* FIM MENU HORIZONT */
+
+/* COMEÇO BOTÕES GERAIS */
+
+/* COMEÇO MAPA SP-BOI */ 
+
+#conteiner #fundo #msp_t2 {
+	position: absolute;
+	top: var(--top1t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #msp_t2 p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #msp_thumb2 {
+	background-image: url(img/mapa_sp_boi_2019_01.jpg);
+	position: absolute;
+	top: var(--top1);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_msp2 .pin_msp2{
+  display: inherit;
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 1123px;
+  top: 860px;
+  margin: -10px 0 0 -10px;
+  animation-name: bouncepin_msp2;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-delay: 0.1s;
+  z-index: 7;
+}
+#overlay_msp2 .pin_msp2 #pin1_msp2{
+  opacity: 1;
+}
+#overlay_msp2 .pin_msp2 #pin1_msp2{
+  width: 7px;
+  height: 7px;
+  margin: 4px 0 0 4px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+#overlay_msp2 .pulse_msp2 {
+  display: inherit;	
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 1120px;
+  top: 850px;
+  margin: 10px 0px 0px -10px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_msp2 .pulse_msp2 #pulse1_msp2 {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: -21px 0 0 -21px;
+	opacity: 1.0;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_msp2 .pulse_msp2 #pulse1_msp2 {
+	opacity: 1;
+	animation: pulsate_msp2 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 2.1s;	
+}
+@keyframes pulsate_msp2 {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(1, 1);
+  opacity: 0;}
+}
+@keyframes bouncepin_msp2 {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 845px;}
+  100% {
+  top: 860px;}
+}
+/* OVERLAY FIM */
+/* FIM MAPA SP-BOI */
+
+/* COMEÇO MAPA BOIÇU-BOIBAN */
+
+#conteiner #fundo #mboi_t2 {
+	position: absolute;
+	top: var(--top2t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mboi_t2 p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mboi_thumb2 {
+	background-image: url(img/mapa_boi_boibana_2019_01.jpg);
+	position: absolute;
+	top: var(--top2);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mboi2 .pin_mboi2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 981px;
+  top: 1340px;
+  margin: -10px 0 0 -10px;
+  animation-name: bouncepin_mboi2;
+  animation-fill-mode: both;
+  animation-duration: 2.2s;
+  animation-delay: 0.2s;	
+  z-index: 7;
+}
+#overlay_mboi2 .pin_mboi2 #pin1_mboi2{
+  opacity: 1;
+}
+#overlay_mboi2 .pin_mboi2 #pin1_mboi2{
+  width: 7px;
+  height: 7px;
+  margin: 4px 0 0 4px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+#overlay_mboi2 .pulse_mboi2 {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 980px;
+  top: 1330px;
+  margin: 10px 0px 0px -10px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mboi2 .pulse_mboi2 #pulse1_mboi2 {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: -21px 0 0 -21px;
+	opacity: 1;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mboi2 .pulse_mboi2 #pulse1_mboi2 {
+	opacity: 1;
+	animation: pulsate_mboi2 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 2.1s;	
+}
+@keyframes pulsate_mboi2 {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(1, 1);
+  opacity: 0;}
+}
+@keyframes bouncepin_mboi2 {
+  0% {
+  opacity: 0;
+  top: 0%;}
+  90% {
+  opacity: 1;
+  top: 1335px;}
+  100% {
+  top: 1340px;}
+}
+/* OVERLAY FIM */
+/* FIM MAPA BOIÇU-BOIBANA */  
+
+/* COMEÇO MAPA DAS PRAIAS */ 
+
+#conteiner #fundo #mpra_t2 {
+	position: absolute;
+	top: var(--top3t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mpra_t2 p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mpra_thumb2 {
+	background-image: url(img/mapa_praias_2019_01.jpg);
+	position: absolute;
+	top: var(--top3);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mpra2 .pin_mpra2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 638px;
+  top: 2243px;
+  margin: -10px 0 0 -10px;
+  animation-name: bouncepin_mpra2;
+  animation-fill-mode: both;
+  animation-duration: 2.4s;
+  animation-delay: 0.3s;
+  z-index: 7;
+}
+#overlay_mpra2 .pin_mpra2 #pin1_mpra2{
+  opacity: 1;
+}
+#overlay_mpra2 .pin_mpra2 #pin1_mpra2{
+  width: 7px;
+  height: 7px;
+  margin: 4px 0 0 4px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+#overlay_mpra2 .pulse_mpra2 {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 636px;
+  top: 2233px;
+  margin: 10px 0px 0px -10px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mpra2 .pulse_mpra2 #pulse1_mpra2 {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: -21px 0 0 -21px;
+	opacity: 1;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mpra2 .pulse_mpra2 #pulse1_mpra2 {
+	opacity: 1;
+	animation: pulsate_mpra2 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mpra2 {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(1, 1);
+  opacity: 0;}
+}
+@keyframes bouncepin_mpra2 {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 2238px;}
+  100% {
+  top: 2243px;}
+}
+/* OVERLAY FIM */
+/* FIM MAPA DAS PRAIAS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrecg_t2 {
+	position: absolute;
+	top: var(--top4t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrecg_t2 p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mrecg_thumb2 {
+	background-image: url(img/mapa_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top4);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+
+/* OVERLAY COMEÇO */
+
+#overlay_mrecg2 .pin_mrecg2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 638px;
+  top: 3038px;
+  margin: -10px 0 0 -10px;
+  animation-name: bouncepin_mrecg2;
+  animation-fill-mode: both;
+  animation-duration: 2.6s;
+  animation-delay: 0.4s;
+  z-index: 7;
+}
+#overlay_mrecg2 .pin_mrecg2 #pin1_mrecg2{
+  opacity: 1;
+}
+#overlay_mrecg2 .pin_mrecg2 #pin1_mrecg2{
+  width: 7px;
+  height: 7px;
+  margin: 4px 0 0 4px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+#overlay_mrecg2 .pulse_mrecg2 {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 636px;
+  top: 3028px;
+  margin: 10px 0px 0px -10px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrecg2 .pulse_mrecg2 #pulse1_mrecg2 {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: -21px 0 0 -21px;
+	opacity: 1;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrecg2 .pulse_mrecg2 #pulse1_mrecg2 {
+	opacity: 1;
+	animation: pulsate_mrecg2 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrecg2 {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(1, 1);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrecg2 {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 3033px;}
+  100% {
+  top: 3038px;}
+}
+/* OVERLAY FIM */
+#regras_colap2 {
+	position: absolute;
+	top: 3307px;
+	left: 475px;
+	display: inherit;
+	z-index: 10;
+}
+.accordion2 {
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: 16px;
+	width: 300px;
+	border: 1px solid var(--corquadrados);
+	text-align: left;
+	outline: none;
+	font-size: 30px;
+	transition: 0.4s;
+	font-family: var(--fontform);
+	white-space: normal;
+	z-index: 10;
+	text-align: center;
+}
+.active2, .accordion2:hover {
+    background-color: var(--corbgmenu);
+    z-index: 10;
+}
+.panel2 {
+    position: absolute;
+	top: -410px;
+	left: -320px;
+	padding: 0 40px;
+    background-color: rgba(250, 250, 250, 0.9);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	font-size: 25px;
+	line-height: 25px;
+	color: black;
+	width: 850px;
+	text-indent:0em;
+	z-index: 10;
+	text-align: left;
+}
+
+/* FIM MAPA DAS RECOMENDACOES GERAIS */
+
+/* COMEÇO MAPA DAS RECOMENDACOES GERAIS */ 
+
+#conteiner #fundo #mrece_t2 {
+	position: absolute;
+	top: var(--top5t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: var(--height2);
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#conteiner #fundo #mrece_t2 p{
+	position: relative;
+	top: var(--top1tt);
+	color: var(--corfontbase);
+}
+#conteiner #fundo #mrece_thumb2 {
+	background-image: url(img/mapa_boi_recomends_2019_01.jpg);
+	position: absolute;
+	top: var(--top5);
+	left: var(--col1);
+	width: var(--fullwidth1);
+	height: var(--fullheight1);
+	opacity: 1;
+	transform: var(--scal_thumb);
+	cursor: pointer;
+}
+
+/* OVERLAY COMEÇO */
+#overlay_mrece2 .pin_mrece2{
+  width: 15px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--corpin);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 981px;
+  top: 3725px;
+  margin: -10px 0 0 -10px;
+  animation-name: bouncepin_mrece2;
+  animation-fill-mode: both;
+  animation-duration: 2.8s;
+  animation-delay: 0.5s;
+  z-index: 7;
+}
+#overlay_mrece2 .pin_mrece2 #pin1_mrece2{
+  opacity: 1;
+}
+#overlay_mrece2 .pin_mrece2 #pin1_mrece2{
+  width: 7px;
+  height: 7px;
+  margin: 4px 0 0 4px;
+  background: var(--corpin2);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+}
+#overlay_mrece2 .pulse_mrece2 {
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 979px;
+  top: 3715px;
+  margin: 10px 0px 0px -10px;
+  transform: rotateX(55deg);
+  z-index: 6;
+}
+#overlay_mrece2 .pulse_mrece2 #pulse1_mrece2 {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	margin: -21px 0 0 -21px;
+	opacity: 1;
+	box-shadow: 0 0 1px 2px var(--corpin);
+}
+#overlay_mrece2 .pulse_mrece2 #pulse1_mrece2 {
+	opacity: 1;
+	animation: pulsate_mrece2 1s ease-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.1s;	
+}
+@keyframes pulsate_mrece2 {
+  0% {
+  transform: scale(0.1, 0.1);
+  opacity: 0.0;}
+  50% {
+  opacity: 1.0;}
+  100% {
+  transform: scale(1, 1);
+  opacity: 0;}
+}
+@keyframes bouncepin_mrece2 {
+  0% {
+  opacity: 0;
+  top: 0px;}
+  90% {
+  opacity: 1;
+  top: 3720px;}
+  100% {
+  top: 3725px;}
+}
+/* OVERLAY FIM */
+/* FIM MAPA DAS RECOMENDACOES ESPECIFICAS */
+
+#gomap768 {
+	display: inherit;
+	position: absolute;
+	left: var(--col1t);
+	top: var(--top6);
+	-webkit-filter: hue-rotate(180deg); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(180deg);
+    -webkit-filter: greyscale(50%); /* Safari 6.0 - 9.0 */
+    filter: greyscale(50%);
+    -webkit-filter: saturate(170%); /* Safari 6.0 - 9.0 */
+    filter: saturate(170%);
+     -webkit-filter: brightness(95%); /* Safari 6.0 - 9.0 */
+    filter: brightness(95%);
+	z-index: -9;
+	opacity: 1;
+	width: var(--width1);
+	height: var(--height1);
+}
+#gomap_t {
+	position: absolute;
+	top: var(--top6t);
+	left: var(--col1t);
+	width: var(--width1);
+	height: 170px;
+	line-height: var(--mtts1420);
+	font-size: var(--mtts1420);
+	border: 1px var(--corquadrados) solid;
+}
+#gomap_t p{
+	position: relative;
+	top: var(--top1tt);
+	font-family: var(--fontfam);
+	text-align: center;
+	color: var(--corfontbase);
+}
+#gomap {
+	display: none;
+}
+#gomap1420 {
+	display: none;
+}
+#gomap360 {
+	display: none;
+}
+
+/* FIM BOTÕES GERAIS */
+
+/* FIM DA TABLET 1260 */
+}
+/* FIM DA TABLET 1260 */
+

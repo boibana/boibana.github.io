@@ -1,0 +1,786 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	color: #d1d3d4;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--corquadrados: white;
+	--corkbca: #3d4973;
+	--opacaixas: 0.3;
+	--corcaixas: black;
+	--corcaixas2: rgba(0, 0, 0, 0.3);
+	--corcurrent: #abecfe;
+}
+#fundo {
+	background-color: var(--corkbca);
+	background-repeat: inherit;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: var(--largura);
+	height: 200%;
+	z-index: -10;
+}
+#contrato {
+	position: absolute;
+	top: var(--top1);
+	left: var(--col1);
+	width: var(--width1);
+	height: auto;
+}
+#contrato h1 {
+	font-size: var(--tts0);
+	color: var(--corcurrent);
+}
+#contrato p {
+	font-size: var(--tts);
+}
+
+@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+* {
+	--largura: 1900px;
+	--top1: 282px;
+	--col1: 57px;
+	--col3: 980px;
+	--width1: 1700px;
+	--height1: 543px;
+	--tts0: 35px;
+	--tts: 25px;
+	--coldiv2: 1800px;
+	--cor_rodap: #26304b;
+    --toproda: 3216px;
+	--ttsr: 30px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col3);
+}
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load1g 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load1g {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1900/cabecalho_1900a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 165px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.85,0.85);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.45,0.45)
+}
+/* FIM BOTÃO TOP */
+
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	height: 57px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 165px;
+	max-width: var(--largura);
+	float: none;
+	z-index: 1;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+
+/* Navigation links */
+.navbar a {
+	
+  width: 316px;
+  height: 57px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+  float: left;
+  position: static;
+  text-decoration: none;
+}
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: #bcbec0;
+  text-decoration: none;
+  font-size: 25px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: white;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+/* FIM MENU HORIZONT */
+} /* FIM DA TELA FULL HD 1920 */
+
+/* COMEÇO DA TELA HD 1440 */
+@media screen and (max-width: 1900px) {
+* {
+	--largura: 1420px;
+	--top1: 290px;
+	--col1: 48px;
+	--col3: 750px;
+	--width1: 1200px;
+	--height1: 445px;
+	--tts0: 30px;
+	--tts: 20px;
+	--coldiv2: 1340px;
+    --cor_rodap: #26304b;
+    --toproda: 2716px;
+	--ttsr: 24px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+}
+#rodape #roda1{
+    position: absolute;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    left: var(--col3);
+}
+#hover {
+	display: inherit;	
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load2 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load2 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/1420/cabecalho_1420a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 171px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.45,0.45)
+}
+/* FIM BOTÃO TOP */
+
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 171px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 171px;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+
+/* Navigation links */
+.navbar a {
+  width: 236px;
+  height: 59px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+.subnav1 {
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  z-index: 5;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  color: #cccccc;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: #bcbec0;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: white;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+
+}
+/* FIM DA TELA FULL HD 1440 */
+
+
+@media screen and (max-width: 1300px) {
+* {
+	--largura: 1260px;
+	--top1: 483px;
+	--col1: 83px;
+	--col3: 750px;
+	--width1: 1014px;
+	--height1: 676px;
+	--tts0: 50px;
+	--tts: 45px;
+	--wid_final: 1014px;
+    --toproda: 10516px;
+	--ttsr: 25px;
+	--height_rodap: 120px;
+	--rodapad: 30px;
+}
+#rodape {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: var(--cor_rodap);
+	position: absolute;
+	top: var(--toproda);
+	width: var(--largura);
+	height: var(--height_rodap);
+	line-height: var(--height_rodap);
+	font-size: var(--ttsr);
+	overflow: hidden;
+}
+#rodape #roda1{
+    position: absolute;
+    top: -15px;
+    left: var(--col1);
+}
+#rodape #roda2{
+    position: absolute;
+    top: 15px;
+    left: var(--col1);
+}
+#hover {
+	display: none;	
+}
+#shover {
+	display: inherit;	
+}
+#loader {
+	display: none;
+}
+#loaderfix {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load3 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load3 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca2 {
+	background-image: url(img/cabecalho_1260a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 305px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 460px;
+	left: 1170px;
+	opacity: 1;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 460px;
+	left: 1170px;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#marca{
+	position: absolute;
+	top: 1383px;
+	left: -600px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.5,0.5)
+}
+/* FIM BOTÃO TOP */
+
+#bgmenu {
+	position: absolute;
+	top: 305px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	height: 118px;
+	z-index: -1;	
+}
+#bgmenuf {
+	background-color: #26304b;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf_shover {
+	background-color: #26304b;
+	position: fixed;
+	top: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: 0;
+	float: none;
+	
+}
+#menu_horiz_config2 {
+	position: absolute;
+	top: 305px;
+}
+#menu_horiz_config2f {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+}
+
+.navbar2 .current {
+	color: #abecfe;	
+}
+#mob_boi {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mob_gal {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	background-color: rgba(38, 48, 75, 1);
+	position: absolute;
+	top: 0px;
+	left: 420px;
+}
+#mob_exp {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	background-color: rgba(38, 48, 75, 1);
+	position: absolute;
+	top: 0px;
+	left: 840px;
+}
+#mob_qsomos {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	background-color: rgba(38, 48, 75, 1);
+	position: absolute;
+	top: 59px;
+	left: 0px;
+}
+#mob_cont {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	background-color: rgba(38, 48, 75, 1);
+	position: absolute;
+	top: 59px;
+	left: 840px;
+}
+#mob_for {
+	width: 420px;
+	height: 59px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(38, 48, 75);
+	background-color: rgba(38, 48, 75, 1);
+	position: absolute;
+	top: 59px;
+	left: 420px;
+}
+/* FIM MENU HORIZONT */
+
+
+
+/* FIM DA TABLET e CEL 1240 */
+}
+/* FIM DA TABLET e CEL 1240 */

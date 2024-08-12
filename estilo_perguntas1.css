@@ -1,0 +1,803 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--mts: 380px;
+	--corfontbase: #d1d3d4; /* cinza */
+	--corkbca: #3d4973; /* roxo claro */
+	--corbgmenu: #26304b; /* roxo escuro */
+	--corcurrent: #abecfe;	/* azul claro */
+	--corquadrados: white;
+	--corfontitulo: #11a4d8;
+	--corfontitulo2: #b2e5ff;
+	--corfonthover: white;
+	--fstit1: 35px;
+	--fstit2: 30px;	
+	--fstxt: 25px;
+}
+#fundo{
+	position: fixed;
+	background-color: var(--corkbca);
+	width: var(--largura);
+	height: 100%;
+	z-index: -101;
+}
+#perguntas {
+	position: absolute;
+	left: var(--leftperg);
+	top: var(--toperg);
+}
+#npergs {
+	padding: var(--pad);
+	color: white;
+	font-size: var(--tts);
+	width:  var(--widthperg);
+}
+.erro {
+	color: red;
+	font-size: var(--tts0);
+}
+.titu1 {
+	padding: var(--pad);
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: var(--ttshover);
+	white-space: normal;
+	color: var(--corcurrent);
+}
+#t1 {
+	color: white;
+	padding: var(--pad);
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	white-space: normal;
+}
+.pergs_acc{
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: var(--pad);
+	border: 1px solid #FFF;
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	transition: 0.4s;
+	white-space: normal;
+	width: var(--widthperg);
+}
+
+.active, .pergs_acc:hover {
+    background-color: #26304b;
+}
+
+.painel {
+    padding: 0 25px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	line-height:  var(--tts);
+	font-size: var(--tts);
+	color: white;
+	width: var(--widthperg);
+	text-indent:0em;
+}
+.painel p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#concl {
+	color: white;
+	padding: var(--pad);
+	width: 100%;
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	white-space: normal;
+	width: var(--widthperg);
+}
+#concl a {
+	color: var(--corcurrent);	
+}
+#concl a:hover {
+	color: var(--corquadrados);	
+	font-size: var(--ttshover);
+}
+/* COMEÇO BOTÃO TOP */
+#end {
+	color: #36F;
+	font-size: 35px;
+	outline: none;
+	position: relative;
+	top: 25px;
+	left: 33px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+}
+#end:hover {
+	color: white;
+}
+#posend {
+	position: relative;
+	top: 10px
+	height: 50px;
+	background-color: transparent;		
+}
+/* FIM BOTÃO TOP */
+
+@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+* {
+	--largura: 1900px;
+	--toperg: 254px;
+	--widthperg: 1767px;
+	--ttshover: 35px;
+	--tts: 25px;
+	--pad: 18px;
+	--tts0: 20px;
+	--leftperg: 3%;
+	--coldiv2: 1825px; 	
+}
+#kbca{
+	background-image: url(img/1900/cabecalho_1900a.jpg);
+	position: absolute;
+	width: var(--largura);
+	height: 165px;
+	top: 0px;
+	z-index: 20;
+}
+#hover {
+	display: inherit;
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load2 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load2 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.85,0.85);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.45,0.45)
+}
+/* FIM BOTÃO TOP */
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 57px;
+	z-index: -1;	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 165px;
+	max-width: var(--largura);
+	float: none;
+	z-index: 1;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);	
+}
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {
+	
+  width: 316px;
+  height: 57px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+  float: left;
+  position: static;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(var(#313f63)), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 25px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+/* FIM MENU HORIZONT */
+
+
+/* COMEÇO DAS ANIMAÇÕES dos botões */
+/* Bounce To Bottom */
+#menu_horiz_config .bounce_bottom {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#menu_horiz_config .bounce_bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#menu_horiz_config .bounce_bottom:hover, .bounce_bottom:focus, .bounce_bottom:active {
+  color: var(--corfonthover);
+}
+#menu_horiz_config .bounce_bottom:hover:before, .bounce_bottom:focus:before, .bounce_bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* FIM ANIMAÇÕES dos botões */
+}
+@media screen and (max-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1420 */
+* {
+	--largura: 1420px;
+	--toperg: 264px;
+	--widthperg: 1320px;
+	--ttshover: 35px;
+	--tts: 25px;
+	--pad: 18px;
+	--tts0: 20px;
+	--leftperg: 3%;
+	--coldiv2: 1359px;
+}
+#hover {
+	display: inherit;
+}
+#shover {
+	display: none;	
+}
+#loaderfix {
+	display: none;
+}
+#loader {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load2 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load2 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca {
+	background-image: url(img/1420/cabecalho_1420a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 171px;
+	width: 1420px;
+	z-index: 20;
+}
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.55,0.55);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 217px;
+	left: var(--coldiv2);
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo #marca{
+	position: fixed;
+	top: 60px;
+	left: -32px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.4,0.4)
+}
+/* FIM BOTÃO TOP */
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 171px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 171px;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);
+}
+/* The navigation menu */
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {
+  width: 236px;
+  height: 59px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  z-index: 5;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+
+/* FIM ANIMAÇÕES dos botões */
+}
+
+@media screen and (max-width: 1300px) {
+* {
+	--largura: 1260px;
+	--toperg: 454px;
+	--widthperg: 1120px;
+	--ttshover: 35px;
+	--tts: 25px;
+	--pad: 18px;
+	--tts0: 20px;
+	--leftperg: 5%; 
+}
+#hover {
+	display: none;	
+}
+#shover {
+	display: inherit;	
+}
+#loader {
+	display: none;
+}
+#loaderfix {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load3 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load3 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca {
+	background-image: url(img/cabecalho_1260a.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 305px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 460px;
+	left: 1180px;
+	opacity: 1;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	position: fixed;
+	top: 460px;
+	left: 1155px;
+	z-index: 99;
+	cursor: pointer;
+	transform: scale(0.75,0.75);
+}
+#marca{
+	position: absolute;
+	top: 1383px;
+	left: -600px;
+	float: none;
+	z-index: 1;
+	transform:scale(0.5,0.5)
+}
+/* FIM BOTÃO TOP */
+
+#bgmenu {
+	position: absolute;
+	top: 305px;
+	left: 0px;
+	background-color: #26304b;
+	width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	background-color: #26304b;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: var(--largura);
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf_shover {
+	background-color: #26304b;
+	position: fixed;
+	top: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: 0;
+	float: none;
+	
+}
+#menu_horiz_config2 {
+	position: absolute;
+	top: 305px;
+}
+#menu_horiz_config2f {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar2 .current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar2 {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+/* Navigation links */
+.navbar2 a {
+  width: 413px;
+  height: 59px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+
+#mob_boi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mob_gal {
+	position: absolute;
+	top: 0px;
+	left: 413px;
+}
+#mob_exp {
+	position: absolute;
+	top: 0px;
+	left: 826px;
+}
+#mob_qsomos {
+	position: absolute;
+	top: 59px;
+	left: 0px;
+}
+#mob_cont {
+	position: absolute;
+	top: 59px;
+	left: 826px;
+}
+#mob_for {
+	position: absolute;
+	top: 59px;
+	left: 413px;
+}
+/* FIM MENU HORIZONT */
+
+
+
+/* FIM DA TABLET e CEL 1240 */
+}
+/* FIM DA TABLET e CEL 1240 */

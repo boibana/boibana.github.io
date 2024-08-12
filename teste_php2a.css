@@ -1,0 +1,697 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	--mts: 380px;
+	--corfontbase: #d1d3d4; /* cinza */
+	--corkbca: #3d4973; /* roxo claro */
+	--corbgmenu: #26304b; /* roxo escuro */
+	--corcurrent: #abecfe;	/* azul claro */
+	--corquadrados: white;
+	--corfontitulo: #11a4d8;
+	--corfontitulo2: #b2e5ff;
+	--corfonthover: white;
+	
+}
+#loader {
+	position: fixed;
+	background-color: var(--corkbca);
+	width: var(--largura);
+	height: 200%;
+	z-index: 100;
+	animation: loader 1s ease;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes loader {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#fundo{
+	position: fixed;
+	background-color: var(--corkbca);
+	width: var(--largura);
+	height: 200%;
+	z-index: -100;
+}
+#perguntas {
+	position: absolute;
+	left: 3%;
+	top: var(--top1);
+}
+#npergs {
+	padding: var(--pad);
+	color: var(--corfontbase);
+	font-size: var(--tts);
+}
+
+.erro {
+	color: red;
+	font-size: var(--tts0);
+}
+.titu1 {
+	color: var(--corcurrent);
+	padding: var(--pad);
+	width: var(--width_t);
+	text-align: left;
+	outline: none;
+	font-size: var(--ttshover);
+	white-space: normal;
+}
+#t1 {
+	color: var(--corfontbase);
+	padding: var(--pad);
+	width: var(--width_t);
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	white-space: normal;
+}
+.pergs_acc{
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: var(--pad);
+	width: var(--width_t2);
+	border: 1px solid #FFF;
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	transition: 0.4s;
+	white-space: normal;
+}
+
+.active, .pergs_acc:hover {
+    background-color: #26304b;
+}
+
+.painel {
+    padding: 0 25px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	line-height:  var(--tts);
+	font-size: var(--tts);
+	color: white;
+	width: var(--width_t3);
+	text-indent:0em;
+}
+.painel p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#concl {
+	color: white;
+	padding: var(--pad);
+	width: var(--width_t);
+	text-align: left;
+	outline: none;
+	font-size: var(--tts);
+	white-space: normal;
+}
+#concl a {
+	color: var(--corcurrent);	
+}
+#concl a:hover {
+	color: var(--corquadrados);	
+	font-size: var(--ttshover);
+}
+
+/* COMEÇO BOTÃO TOP */
+#pro_topo {
+	position: fixed;
+	top: 50%;
+	left: var(--coltop);
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+}
+#pro_topo:hover {
+	background-image: url(img/pro_topo1_e2.png);
+	z-index: 99;
+	cursor: pointer;
+}
+#end {
+	color: #36F;
+	font-size: 35px;
+	outline: none;
+	position: relative;
+	top: 25px;
+	left: 33px;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+}
+#end:hover {
+	color: white;
+}
+#posend {
+	position: relative;
+	top: 10px
+	height: 50px;
+	background-color: transparent;		
+}
+/* FIM BOTÃO TOP */
+
+@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+* {
+	--largura: 1900px;
+	--top1: 254px;
+	--coltop: 1815px;
+	--width_t: 1800px;
+	--width_t2: 1750px;
+	--width_t3: 1700px;
+	--ttshover: 35px;
+	--tts: 25px;
+	--pad: 18px;
+	--tts0: 20px;
+}
+#kbca{
+	background-image: url(img/1900/cabecalho_1900.jpg);
+	position: absolute;
+	width: var(--largura);
+	height: 165px;
+	top: 0px;
+	z-index: 20;
+}
+#hover {
+	display: inherit;
+}
+#shover {
+	display: none;	
+}
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 165px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 57px;
+	z-index: -1;
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 57px;
+	z-index: -1;	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 165px;
+	max-width: var(--largura);
+	float: none;
+	z-index: 1;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);	
+}
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {	
+  width: 316px;
+  height: 57px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 57px;
+  text-align: center;
+  float: left;
+  position: static;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  float: left;
+  overflow: hidden;
+}
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(var(#313f63)), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 25px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+/* FIM MENU HORIZONT */
+
+
+/* COMEÇO DAS ANIMAÇÕES dos botões */
+/* Bounce To Bottom */
+#menu_horiz_config .bounce_bottom {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#menu_horiz_config .bounce_bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+#menu_horiz_config .bounce_bottom:hover, .bounce_bottom:focus, .bounce_bottom:active {
+  color: var(--corfonthover);
+}
+#menu_horiz_config .bounce_bottom:hover:before, .bounce_bottom:focus:before, .bounce_bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* FIM ANIMAÇÕES dos botões */
+}
+@media screen and (max-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1420 */
+* {
+	--largura: 1420px;
+	--top1: 254px;
+	--coltop: 1340px;
+	--width_t: 1340px;
+	--width_t2: 1280px;
+	--width_t3: 1220px;
+	--ttshover: 30px;
+	--tts: 20px;
+	--pad: 18px;
+	--tts0: 18px;
+}
+#hover {
+	display: inherit;
+}
+#shover {
+	display: none;	
+}
+#kbca {
+	background-image: url(img/1420/cabecalho_1420.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 171px;
+	width: 1420px;
+	z-index: 20;
+}
+/* COMEÇO MENU HORIZONT */
+#bgmenu {
+	position: absolute;
+	top: 171px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: var(--corbgmenu);
+	width: 100%;
+	max-width: var(--largura);
+	height: 59px;
+	z-index: -1;
+	
+}
+#menu_horiz_config {
+	position: absolute;
+	top: 171px;
+}
+#menu_horiz_configfix {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar a.current {
+	color: var(--corcurrent);
+}
+/* The navigation menu */
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--corbgmenu);
+}
+
+/* Navigation links */
+.navbar a {
+  width: 236px;
+  height: 59px;
+  font-family: var(--fontfam);
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  color: var(--corfontbase);
+}
+.subnav1 {
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+}
+.subnav2 {
+  z-index: 5;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav1 .subnavbtn1 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav2 .subnavbtn2 {
+  font-size: 14px; 
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav1:hover .subnavbtn1 {
+  background: -webkit-gradient(linear, center top, center bottom, from(#313f63), to(#435789));
+  background-image: linear-gradient(#313f63, #435789);
+  border-radius: 20px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav1-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #313f63;
+  width: var(--largura);
+}
+.subnav1-content .flo_r{
+	float: right;
+}
+.subnav2-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #435789;
+  width: var(--largura);
+}
+/* Style the subnav links */
+.subnav1-content a {
+  float: left;
+  color: var(--corfontbase);
+  text-decoration: none;
+  font-size: 20px;
+}
+/* Add a grey background color on hover */
+.subnav1-content a:hover {
+  background-color: #435789;
+  color: var(--corfonthover);
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav1:hover .subnav1-content {
+  display: block;
+}
+.subnav2:hover .subnav2-content {
+  display: block;
+}
+
+/* FIM ANIMAÇÕES dos botões */
+}
+
+@media screen and (max-width: 1300px) {
+* {
+	--largura: 1260px;
+	--top1: 465px;
+	--coltop: 1170px;
+	--width_t: 1180px;
+	--width_t2: 1130px;
+	--width_t3: 1100px;
+	--ttshover: 42px;
+	--tts: 40px;
+	--pad: 18px;
+	--tts0: 30px;
+}
+#hover {
+	display: none;	
+}
+#shover {
+	display: inherit;	
+}
+#loader {
+	display: none;
+}
+#loaderfix {
+	display: inherit;
+	background-color: var(--corkbca);
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: var(--largura);
+	z-index: 201;
+	animation: load3 1s ease-in 1;
+	animation-delay: 0.5s;
+	animation-fill-mode:forwards;
+	opacity: 1;
+}
+@keyframes load3 {
+  0% {
+  left: 0;
+  opacity: 1;
+  }
+  90%{
+  left: 0;
+  opacity: 0;
+  }
+  100% {
+  left: -100%;
+  opacity: 0;
+  }
+}
+#kbca {
+	background-image: url(img/cabecalho_1260.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	height: 305px;
+	width: var(--largura);
+	float: none;
+	z-index: 20;
+}
+
+#bgmenu {
+	position: absolute;
+	top: 305px;
+	left: 0px;
+	background-color: #26304b;
+	width: 100%;
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf {
+	background-color: #26304b;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	max-width: var(--largura);
+	height: 118px;
+	z-index: -1;
+	
+}
+#bgmenuf_shover {
+	background-color: #26304b;
+	position: fixed;
+	top: 0px;
+	width: var(--largura);
+	height: 118px;
+	z-index: 0;
+	float: none;
+	
+}
+#menu_horiz_config2 {
+	position: absolute;
+	top: 305px;
+}
+#menu_horiz_config2f {
+	position: fixed;
+	top: 0px;
+	z-index: 0;
+	float: none;
+}
+
+.navbar2 .current {
+	color: #abecfe;	
+}
+/* The navigation menu */
+.navbar2 {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #26304b;
+  color: #cccccc;
+}
+/* Navigation links */
+.navbar2 a {
+  background-color: #26304b;
+  width: 420px;
+  height: 59px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: center;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  color: #cccccc;
+}
+
+#mob_boi {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mob_gal {
+	position: absolute;
+	top: 0px;
+	left: 420px;
+}
+#mob_exp {
+	position: absolute;
+	top: 0px;
+	left: 840px;
+}
+#mob_qsomos {
+	position: absolute;
+	top: 59px;
+	left: 0px;
+}
+#mob_cont {
+	position: absolute;
+	top: 59px;
+	left: 840px;
+}
+#mob_for {
+	position: absolute;
+	top: 59px;
+	left: 420px;
+}
+/* FIM MENU HORIZONT */
+
+
+
+/* FIM DA TABLET e CEL 1240 */
+}
+/* FIM DA TABLET e CEL 1240 */
