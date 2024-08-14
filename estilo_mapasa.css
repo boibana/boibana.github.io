@@ -1113,7 +1113,7 @@
 .panel {
     position: absolute;
 	top: -200px;
-	left: -250px;
+	left: -480px;
 	padding: 0 20px;
     background-color: transparent;
     max-height: 0;
@@ -2423,7 +2423,7 @@
 #regras_colap {
 	position: fixed;
 	top: 655px;
-	left: 450px;
+	left: 550px;
 	display: none;
 	z-index: 10;
 }
@@ -2450,7 +2450,7 @@
 .panel {
     position: absolute;
 	top: -165px;
-	left: -320px;
+	left: -220px;
 	padding: 0 20px;
     background-color: transparent;
     max-height: 0;
