@@ -169,7 +169,7 @@
 #bg5 {
 	background-color: black;
 	position: absolute;
-	top: var(--topbg4);
+	top: var(--topbg5);
 	left: 0;
 	z-index: -1;
 	width: var(--largura);
@@ -178,20 +178,20 @@
 }
 #videopraias iframe {
 	position: absolute;
-	top: var(--top4);
+	top: var(--top5);
 	left: var(--col3);
 	width: var(--width1); 
 	height: var(--height1);
 }
 #videopraias p {
 	position: absolute;
-	top: var(--top4t);
+	top: var(--top5t);
 	left: var(--col3);
 	font-size: var(--tts);
 }
 #videopraiast {
 	position: absolute;
-	top: var(--top4);
+	top: var(--top5);
 	left: var(--col1);
 	width: var(--width1); 
 	height: auto;
@@ -219,6 +219,8 @@
 	--topbg4: 2130px;
 	--top4t: 2150px;
 	--top4: 2213px;
+	--topbg5: 2747px;
+	--top5t: 2763px;
 	--top5: 1783px;
 	--top6: 2193px;
 	--col0t: 69px;
