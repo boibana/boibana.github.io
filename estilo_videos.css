@@ -139,6 +139,43 @@
 	height: var(--bgalt);
 	opacity: var(--opacaixas);
 }
+#videoap6 iframe {
+	position: absolute;
+	top: var(--top4);
+	left: var(--col3);
+	width: var(--width1); 
+	height: var(--height1);
+}
+#videoap6 p {
+	position: absolute;
+	top: var(--top4t);
+	left: var(--col3);
+	font-size: var(--tts);
+}
+#videoap6t {
+	position: absolute;
+	top: var(--top4);
+	left: var(--col1);
+	width: var(--width1); 
+	height: auto;
+	border: var(--corquadrados) 1px solid;
+}
+#videoap6t p {
+	padding: var(--pad);
+	font-size: var(--stxt);
+	line-height: var(--stxt);
+	text-align: start;
+}
+#bg5 {
+	background-color: black;
+	position: absolute;
+	top: var(--topbg4);
+	left: 0;
+	z-index: -1;
+	width: var(--largura);
+	height: var(--bgalt);
+	opacity: var(--opacaixas);
+}
 #videopraias iframe {
 	position: absolute;
 	top: var(--top4);
