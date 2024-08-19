@@ -45,6 +45,12 @@
     position: absolute;
     left: var(--col3);
 }
+#rodape #roda2 a{
+	color: var(--corcurrent);
+}
+#rodape #roda2 a:hover{
+	color: var(--corquadrados);
+}
 #conteiner #fundo {
 	background-image: url(img/1900/home_1900_bg.jpg);
 	background-repeat: no-repeat;
@@ -331,6 +337,12 @@
 #rodape #roda2{
     position: absolute;
     left: var(--col3);
+}
+#rodape #roda2 a{
+	color: var(--corcurrent);
+}
+#rodape #roda2 a:hover{
+	color: var(--corquadrados);
 }
 #conteiner #fundo {
 	background-image: url(img/1420/home_1420_bg_e1.jpg);
@@ -625,6 +637,12 @@
     position: absolute;
     top: 15px;
     left: var(--col1);
+}
+#rodape #roda2 a{
+	color: var(--corcurrent);
+}
+#rodape #roda2 a:hover{
+	color: var(--corquadrados);
 }
 #boi1900 {
 	display: none;
