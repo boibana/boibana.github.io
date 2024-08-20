@@ -1,6 +1,6 @@
-* {
-	--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
+* {--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+*#rodape #roda2 a:hover{color: var(--corquadrados);}
+*#rodape #roda2 a{color: var(--corcurrent);}
 @media screen and (min-width: 1900px) { 	/* COMEÇO DA TELA FULL HD 1920 */
 * {
 	padding: 0;
@@ -44,12 +44,6 @@
 #rodape #roda2{
     position: absolute;
     left: var(--col3);
-}
-#rodape #roda2 a{
-	color: var(--corcurrent);
-}
-#rodape #roda2 a:hover{
-	color: var(--corquadrados);
 }
 #conteiner #fundo {
 	background-image: url(img/1900/home_1900_bg.jpg);
