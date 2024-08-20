@@ -1,6 +1,6 @@
 * {--fontfam: "Trebuchet MS", Arial, Helvetica, sans-serif;}
 *#rodape #roda2 a:hover{color: var(--corquadrados);}
-*#rodape #roda2 a{color: var(--corcurrent);}
+*#rodape #roda2 a{color: #abecfe;}
 * {
 	padding: 0;
 	margin: 0;
@@ -9,7 +9,6 @@
 	--corquadrados: white;
 	--corkbca: #3d4973;
 	--opacaixas: 0.3;
-	--corcurrent: #abecfe;	/* azul claro */
 }
 #fundo {
 	background-color: var(--corkbca);
