@@ -1,4 +1,6 @@
-﻿@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
+*#rodape #roda2 a:hover{color: var(--corquadrados);}
+*#rodape #roda2 a{color: var(--corcurrent);}
+@media screen and (min-width: 1900px) { /*	COMEÇO DA TELA FULL HD 1920 */
 * {
 	padding: 0;
 	margin: 0;
